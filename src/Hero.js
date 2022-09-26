@@ -1,11 +1,14 @@
 import styles from '../styles/Home.module.css'
+import AnimatedTextWord from './HeroText'
 
 const Hero = () => {
+
     return (
         <div className={styles.containerHero}>
             <div className={styles.content}>
-                <h1 className={styles.titleHero}>Quentin Vedrenne</h1>
-                <h2 className={styles.subTitleHero}>Developper full stack / project manager</h2>
+                <AnimatedTextWord  styl={styles.titleHero} text="Quentin Vedrenne" />
+                <AnimatedTextWord styl={styles.titleHero} text="Developper full stack / project manager" />
+                {/* <h2 className={styles.subTitleHero}></h2> */}
             </div>
         </div>
 
