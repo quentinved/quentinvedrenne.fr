@@ -4,45 +4,46 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 const TimelineItem = (x) => {
+
     const cardVariants = {
         offscreen: {
             opacity: 0,
         },
         onscreen: {
-          y: 50,
-          opacity: 1,
-          transition: {
-            type: "swing",
-            bounce: 0.4,
-            duration: 0.8
-          }
+            y: 50,
+            opacity: 1,
+            transition: {
+                type: "swing",
+                bounce: 0.2,
+                duration: 0.5
+            }
         }
-      };
+    };
 
     return (
         <motion.div
-                initial="offscreen"
-                whileInView="onscreen"
-                viewport={{ once: false, amount: 0.8 }}
-                className={styles.timelineitem}
-            >
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: false, amount: 0.8 }}
+            className={styles.timelineitem}
+            key={x.data.id}
+        >
             <motion.div variants={cardVariants} className={styles.timelineitemcontent}>
-                <p className='styles.companytimeline' key={x.data.id}>{x.data.date}</p>
-                <h3 key={x.data.id}>{x.data.title}</h3>
-                <p className='styles.companytimeline' key={x.data.id}>{x.data.company_name}</p>
-                <p className='styles.companytimeline' key={x.data.id}>{x.data.location}</p>
-                {x.data.detail?.map((elem) => {
+                <p className='styles.companytimeline'>{x.data.date}</p>
+                <h3>{x.data.title}</h3>
+                <p className='styles.companytimeline'>{x.data.company_name}</p>
+                <p className='styles.companytimeline'>{x.data.location}</p>
+                {x.data.detail?.map((elem, index) => {
                     return (
-                        <>
-                            <ul>
-                                <li>{elem.title}
-                                    <ul>
-                                        {elem.task?.map((task) => {return <li key={1}>{task}</li>
-                                        })}
-                                    </ul>
-                                </li>
-                            </ul>
-                        </>
+                        <ul key={index} >
+                            <li> {elem.title}
+                                <ul>
+                                    {elem.task?.map((task, index) => {
+                                        return <li key={index}>{task}</li>
+                                    })}
+                                </ul>
+                            </li>
+                        </ul>
                     )
                 })}
                 <span className={styles.circle}>
@@ -56,13 +57,13 @@ const TimelineItem = (x) => {
 const Experience = () => {
 
     return (
-        // <section class="timeline-section">
-        <div className={styles.timelinecontainer}>
-            {timelineElements.map((data) => {
-                return <TimelineItem key={data.id} data={data} />
-            })}
-        </div>
-        // </section>
+        <section id="timeline-section">
+            <div className={styles.timelinecontainer}>
+                {timelineElements.map((data) => {
+                    return <TimelineItem data={data} key={data.id} />
+                })}
+            </div>
+        </section>
     )
 }
 
