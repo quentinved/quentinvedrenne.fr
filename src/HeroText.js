@@ -2,9 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from '../styles/Home.module.css'
 
-const AnimatedTextWord = ({ text }) => {
+const AnimatedTextWord = ({ text, isSubtitle }) => {
   const words = text.split(" ");
-
   const container = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
@@ -41,16 +40,29 @@ const AnimatedTextWord = ({ text }) => {
       initial="hidden"
       animate="visible"
     >
-      {words.map((word, index) => (
-        <motion.span
-          variants={child}
-          style={{ marginRight: "5px" }}
-          className={styles.titleHero}
-          key={index}
-        >
-          {word}
-        </motion.span>
-      ))}
+      {isSubtitle ?
+        words.map((word, index) => (
+          <motion.span
+            variants={child}
+            style={{ marginRight: "5px" }}
+            className={styles.subTitleHero}
+            key={index}
+          >
+            {word}
+          </motion.span>
+        ))
+        :
+        words.map((word, index) => (
+          <motion.span
+            variants={child}
+            style={{ marginRight: "5px" }}
+            className={styles.titleHero}
+            key={index}
+          >
+            {word}
+          </motion.span>
+        ))
+      }
     </motion.div>
   );
 };
