@@ -55,7 +55,10 @@
   align-items: center;
   width: 100%;
   flex-direction: row;
+  background-color: #142a41;
+  color: #A86E0F;
 }
+
 
 .aboutme {
   display: flex;
@@ -72,6 +75,7 @@
   padding-right: 5%;
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 .titleStory {
@@ -95,22 +99,47 @@
 
 /* ---------------------------------- Timeline ---------------------------------- */
 
+.containerTitleExperience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #142a41;
+}
+
+.titleExperience {
+  color: #A86E0F;
+  font-size: clamp(40px, 4vw, 80px);
+}
+
 .timelinecontainer {
   display: flex;
   flex-direction: column;
   position: relative;
   background-color: #1B3D5C;
-  margin: 40px 0;
   padding-bottom: 100px;
+  padding-top: 200px;
+}
+
+.timelinecontainer::before {
+  content: ' ';
+  position: absolute;
+  top: -0px;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to bottom, #142a41, transparent);
+  z-index: 2;
 }
 
 .timelinecontainer::after {
   background-color: #A86E0F;
   content: '';
   position: absolute;
+  margin-top: 10%;
   left: calc(50% - 2px);
   width: 3px;
-  height: 100%;
+  height: 80%;
 }
 
 .timelineitem {
@@ -208,6 +237,11 @@
     padding-left: 60px;
     padding-right: 0px;
     
+  }
+
+  .timelinecontainer::after {
+    margin-top: 60%;
+    height: 71%;
   }
 
   .timelineitem .timelineitemcontent .circle {

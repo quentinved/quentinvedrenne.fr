@@ -1,7 +1,25 @@
 import styles from '../styles/Home.module.css'
 import { motion } from 'framer-motion'
 
+
+export const storyAnim = {
+  offscreen: {
+    opacity: 0,
+    y: -25,
+  },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 2
+    }
+  }
+};
+
 const Story = () => {
+  
   const meAnim = {
     offscreen: {
       opacity: 0,
@@ -34,21 +52,7 @@ const Story = () => {
     }
   };
 
-  const storyAnim = {
-    offscreen: {
-      opacity: 0,
-      y: -25,
-    },
-    onscreen: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.4,
-        duration: 2
-      }
-    }
-  };
+
 
   return (
     <section id='aboutmesection'>
@@ -64,7 +68,7 @@ const Story = () => {
         </div>
         <div className={styles.story}>
           <motion.div variants={storyAnim}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in leo felis. Morbi ut gravida velit. Duis auctor, lacus in vestibulum eleifend, urna libero euismod dolor, vitae varius odio erat porta metus. Curabitur bibendum augue nec nisl ullamcorper, non luctus eros tempus. Praesent placerat consectetur quam, quis efficitur leo tempus eget. Quisque placerat, ex non ornare commodo, neque eros convallis tortor, nec rhoncus sapien augue vel nisi. Sed pretium diam ut tempus ornare. Sed feugiat, ipsum sed bibendum pharetra, nibh lectus tincidunt lectus, nec tristique ligula sem ut massa. Vestibulum ut porttitor lorem. Vivamus pellentesque leo nec orci dapibus, et porttitor leo consequat. Ut viverra odio nec tempus consequat.
+          Hi, my name is Quentin Vedrenne I’m a French Student from EPITECH and I’m researching an intern position as Software Engineer to conclude my fifth and last year of school from March to August 2023. With now three years in the IT development and 1 year in the role of project manager I’m confident that my knowledge will be a real asset to the team.
           </motion.div>
         </div>
         {/* <p className={styles.lighttextwrapper}>d<p id="lighttext" className={styles.lighttext}>About</p></p> */}
