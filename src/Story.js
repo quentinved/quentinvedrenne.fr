@@ -56,11 +56,11 @@ const Story = () => {
         className={styles.storyContainer}
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{ once: true, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.4 }}
       >
         <div className={styles.aboutme}>
-          <motion.div variants={aboutAnim}>About</motion.div>
-          <motion.div variants={meAnim}>Me</motion.div>
+          <motion.div variants={aboutAnim} className={styles.titleStory}> About</motion.div>
+          <motion.div variants={meAnim} className={styles.titleStory} >Me</motion.div>
         </div>
         <div className={styles.story}>
           <motion.div variants={storyAnim}>
