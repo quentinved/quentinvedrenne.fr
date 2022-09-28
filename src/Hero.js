@@ -6,9 +6,8 @@ const Hero = () => {
     return (
         <div className={styles.containerHero}>
             <div className={styles.content}>
-                <AnimatedTextWord  styl={styles.titleHero} text="Quentin Vedrenne" />
-                <AnimatedTextWord styl={styles.titleHero} text="Developper full stack / project manager" />
-                {/* <h2 className={styles.subTitleHero}></h2> */}
+                <AnimatedTextWord text="Quentin Vedrenne" isSubtitle={false}/>
+                <AnimatedTextWord text="Developer full stack / project manager" isSubtitle={true}/>
             </div>
         </div>
 
