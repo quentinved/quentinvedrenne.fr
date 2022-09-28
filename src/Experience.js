@@ -2,6 +2,7 @@ import styles from '../styles/Home.module.css'
 import timelineElements from './timelineElements'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { storyAnim } from './Story'
 
 const TimelineItem = (x) => {
 
@@ -58,6 +59,16 @@ const Experience = () => {
 
     return (
         <section id="timeline-section">
+            <motion.div
+                className={styles.containerTitleExperience}
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.4 }}
+            >
+                <motion.div variants={storyAnim} className={styles.titleExperience}>
+                   My experiences
+                </motion.div>
+            </motion.div>
             <div className={styles.timelinecontainer}>
                 {timelineElements.map((data) => {
                     return <TimelineItem data={data} key={data.id} />
