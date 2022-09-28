@@ -1,4 +1,4 @@
-/* HERO */
+/* ---------------------------------- Hero ---------------------------------- */
 
 .containerHero {
   background-image: linear-gradient(to bottom,
@@ -45,7 +45,7 @@
   font-size: clamp(15px, 2vw, 70px);
 }
 
-/* Story */
+/* ---------------------------------- Story ---------------------------------- */
 
 .storyContainer {
   min-height: 100vh;
@@ -54,7 +54,6 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding-bottom: 100px;
   flex-direction: row;
 }
 
@@ -62,48 +61,40 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column !important;
   width: 50%;
   height: 100%;
-  font-size: clamp(20px, 4vw, 100px);
 }
-
 
 .story {
   width: 50%;
   height: 100%;
-  padding: 3rem 0;
   padding-right: 5%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  /* font-size: clamp(20px, 4vw, 100px); */
 }
+
+.titleStory {
+  font-size: clamp(40px, 4vw, 100px);
+}
+
 @media only screen and (max-width: 767px) {
   .storyContainer {
     flex-direction: column;
   }
   .aboutme {
-    width: 100%;
-  flex-direction: row;
+    height: 5%;
+    margin-top: 35%;
   }
   .story {
     width: 100%;
+    height: 75%;
     padding: 40px;
   }
 }
 
+/* ---------------------------------- Timeline ---------------------------------- */
 
-@keyframes slideUp {
-  0% {
-    color: red;
-  }
-  100% {
-    color: green;
-  }
-}
-
-/* Timeline */
 .bodytimeline {
   background-color: red;
   display: flex;
