@@ -51,7 +51,7 @@ const Story = () => {
   };
 
   return (
-    <section id='aboutmesection' class="aboutmesection">
+    <section id='aboutmesection'>
       <motion.div
         className={styles.storyContainer}
         initial="offscreen"
