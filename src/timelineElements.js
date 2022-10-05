@@ -6,6 +6,7 @@ let timelineElements = [
     company_name: "Rubrash",
     location: "Lyon, France",
     date: "2020 - 2021 (15 MONTHS)",
+    skills: ["project managment", "NextJS", "NodeJS" ],
     detail: [{
       id: 1,
       title: "Project Manager",
