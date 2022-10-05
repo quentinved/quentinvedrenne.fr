@@ -30,13 +30,17 @@ const TimelineItem = (x) => {
             key={x.data.id}
         >
             <motion.div variants={cardVariants} className={styles.timelineitemcontent}>
-                <p className='styles.companytimeline'>{x.data.date}</p>
-                <h3>{x.data.title}</h3>
-                <p className='styles.companytimeline'>{x.data.company_name}</p>
-                <p className='styles.companytimeline'>{x.data.location}</p>
+                <p className={styles.dateCard}>{x.data.date}</p>
+                <p className={styles.titleCard}>{x.data.title}</p>
+                <p className={styles.companyCard}>{x.data.company_name} - {x.data.location}</p>
+                <div className={styles.containerSkills}>
+                    {x.data.skills && x.data.skills.map((elem, index) => {
+                        return <h3 className={styles.skillsCard} key={index}>{elem}</h3>
+                    })}
+                </div>
                 {x.data.detail?.map((elem, index) => {
                     return (
-                        <ul key={index} >
+                        <ul key={index} className={styles.listCard}>
                             <li> {elem.title}
                                 <ul>
                                     {elem.task?.map((task, index) => {

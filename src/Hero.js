@@ -7,7 +7,7 @@ const Hero = () => {
         <div className={styles.containerHero}>
             <div className={styles.content}>
                 <AnimatedTextWord text="Quentin Vedrenne" isSubtitle={false}/>
-                <AnimatedTextWord text="Developer full stack / project manager" isSubtitle={true}/>
+                <AnimatedTextWord text="Developer full stack - EPITECH" isSubtitle={true}/>
             </div>
         </div>
 

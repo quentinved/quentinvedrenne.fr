@@ -1,3 +1,7 @@
+.body{
+  font-family: 'Gemunu Libre', sans-serif;
+}
+
 /* ---------------------------------- Hero ---------------------------------- */
 
 .containerHero {
@@ -24,14 +28,6 @@
   mix-blend-mode: exclusion;
 }
 
-.containerHero::before {
-  content: "";
-  position: absolute;
-  bottom: 200vh;
-  width: 100%;
-  height: 100%;
-  background-color: (to top, #A86E0F, transparent);
-}
 
 
 .titleHero {
@@ -56,7 +52,6 @@
   width: 100%;
   flex-direction: row;
   background-color: #142a41;
-  color: #A86E0F;
 }
 
 
@@ -65,17 +60,19 @@
   justify-content: center;
   align-items: center;
   flex-direction: column !important;
-  width: 50%;
+  width: 35%;
   height: 100%;
+  color: #A86E0F;
 }
 
 .story {
-  width: 50%;
+  width: 65%;
   height: 100%;
   padding-right: 5%;
   display: flex;
   align-items: center;
   text-align: center;
+  font-size: clamp(10px, 4vw, 20px);
 }
 
 .titleStory {
@@ -140,6 +137,41 @@
   left: calc(50% - 2px);
   width: 3px;
   height: 80%;
+}
+
+.dateCard {
+  color: #ffd796;
+  font-size: clamp(10px, 4vw, 18px);
+}
+
+.titleCard {
+  margin-top: 0%;
+  color: #ffd796;
+  font-size: clamp(15px, 4vw, 23px);
+}
+
+.companyCard {
+  margin-top: -2%;
+  color: #ffd796;
+  font-size: clamp(8px, 4vw, 15);
+}
+
+.listCard {
+  color: green;
+}
+
+.containerSkills {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.skillsCard {
+  background-color: #ffd796 ;
+  padding: 1%;
+  margin-right: 1%;
+  border-radius: 5%;
 }
 
 .timelineitem {
