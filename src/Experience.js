@@ -32,7 +32,8 @@ const TimelineItem = (x) => {
             <motion.div variants={cardVariants} className={styles.timelineitemcontent}>
                 <p className={styles.dateCard}>{x.data.date}</p>
                 <p className={styles.titleCard}>{x.data.title}</p>
-                <p className={styles.companyCard}>{x.data.company_name} - {x.data.location}</p>
+                <p className={styles.companyCard}>{x.data.company_name}</p>
+                <p className={styles.placeCard}>{x.data.location}</p>
                 <div className={styles.containerSkills}>
                     {x.data.skills && x.data.skills.map((elem, index) => {
                         return <h3 className={styles.skillsCard} key={index}>{elem}</h3>
@@ -52,7 +53,7 @@ const TimelineItem = (x) => {
                     )
                 })}
                 <span className={styles.circle}>
-                    {x.data.type == "experience" ? <Image className={styles.workCircle} width="50" height="50" src='/work.svg' alt='oui' /> : <Image width="45" height="45" src='/school.svg' alt='oui' />}
+                    {x.data.type == "experience" ? <Image className={styles.workCircle} width="50" height="50" src='/work.svg' alt='oui' /> : <Image className={styles.schoolCircle} width="50" height="50" src='/school.svg' alt='oui' />}
                 </span>
             </motion.div>
         </motion.div>
