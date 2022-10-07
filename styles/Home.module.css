@@ -355,13 +355,18 @@
 
 /* ---------------------------------- Skills ---------------------------------- */
 
-.containerSkills {
+.titleSkills {
+    color: #A86E0F;
+    font-size: clamp(40px, 4vw, 80px);
+    margin: 0px;
+
+}
+.containerSkillsPart {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   flex-wrap: wrap;
   width: 30%;
-  min-height: 10vh;
+  
 }
 
 .containerSkill {
@@ -404,15 +409,21 @@
 
 .containerCenter {
   width: 100%;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
+.skillSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1B3D5C;
+}
 
 @media only screen and (max-width: 767px) {
-  .containerSkills {
-    width: 90%;
+  .containerSkillsPart {
+    width: 100%;
   }
 }
 

@@ -23,10 +23,11 @@ const Skill = (props) => {
 
 const Skills = () => {
     return (
-        <div>
-            <h1>skills</h1>
+        <div className={styles.skillSection}>
+            <p className={styles.titleSkills}>My Skills</p>
+            <p>Hover each language logo to see my learning pourcentage on it</p>
             <div className={styles.containerCenter}>
-                <div className={styles.containerSkills}>
+                <div className={styles.containerSkillsPart}>
                     <Skill src="./js.png" class={styles.normalLogo} directionLeft={false} pourcent="75%" />
                     <Skill src="./ts.png" class={styles.normalLogo} directionLeft={false} pourcent="65%" />
                     <Skill src="./react.png" class={styles.normalLogo} directionLeft={false} pourcent="85%" />
