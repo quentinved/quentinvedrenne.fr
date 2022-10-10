@@ -6,6 +6,8 @@ import Hero from '../src/Hero'
 import Skills from '../src/Skills'
 import Story from '../src/Story'
 import styles from '../styles/Home.module.css'
+import Portfolio from '../src/Portfolio'
+import Contact from '../src/Contact'
 
 export default function Home() {
   
@@ -16,7 +18,9 @@ export default function Home() {
       <Story />
       <Experience />
       <Skills/>
-      {/* <Footer /> */}
+      <Portfolio/>
+      <Contact/>
+      <Footer />
     </div>
   )
 }
