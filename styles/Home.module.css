@@ -1,4 +1,4 @@
-.body{
+.body {
   font-family: 'Gemunu Libre', sans-serif;
 }
 
@@ -102,10 +102,12 @@
   .storyContainer {
     flex-direction: column;
   }
+
   .aboutme {
     height: 100%;
     margin-top: 25%;
   }
+
   .story {
     width: 100%;
     height: 75%;
@@ -215,7 +217,7 @@
   padding-right: 60px;
   margin: 10px 0;
   width: 50%;
-  z-index:1;
+  z-index: 1;
 }
 
 .timelineitem:nth-child(even) .containerSkills {
@@ -224,8 +226,8 @@
 
 .timelineitem:nth-child(odd) {
   align-self: flex-end;
-  justify-content: flex-start; 
-  padding-right: 10px; 
+  justify-content: flex-start;
+  padding-right: 10px;
   padding-left: 60px;
 }
 
@@ -233,12 +235,13 @@
   left: -85px;
   right: auto;
 }
-.timelineitem:nth-child(odd)  .timelineitemcontent{
+
+.timelineitem:nth-child(odd) .timelineitemcontent {
   align-items: flex-start;
   text-align: left;
 }
 
-.timelineitem:nth-child(odd)  .timelineitemcontent::after{
+.timelineitem:nth-child(odd) .timelineitemcontent::after {
   right: auto;
   left: -7.5px;
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
@@ -293,15 +296,15 @@
 .workCircle {
   padding-top: 15px !important;
   margin-bottom: 7px !important;
-  overflow: inherit ;
+  overflow: inherit;
 
 }
 
 .schoolCircle {
   padding-top: 15px !important;
   margin-bottom: 7px !important;
-  overflow: inherit ;
-  overflow: inherit ;
+  overflow: inherit;
+  overflow: inherit;
 }
 
 @media only screen and (max-width: 767px) {
@@ -316,10 +319,10 @@
 
   .timelineitem {
     width: 100%;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     padding-left: 60px;
     padding-right: 0px;
-    
+
   }
 
   .timelinecontainer::after {
@@ -331,12 +334,12 @@
     left: -85px;
     right: auto;
   }
-  
-  .timelineitem:nth-child(even) .timelineitemcontent::after  {
+
+  .timelineitem:nth-child(even) .timelineitemcontent::after {
     left: -7.5px;
     box-shadow: -1px 1px 1px #4277A8;
   }
-  
+
   .timelineitemcontent,
   .timelineitem:nth-child(odd) .timelineitemcontent {
     left: 39px;
@@ -344,7 +347,7 @@
     align-items: flex-start;
     text-align: left;
   }
-  
+
   .timelineitemcontent {
     width: calc(100% - 4px);
     align-items: flex-start;
@@ -356,17 +359,18 @@
 /* ---------------------------------- Skills ---------------------------------- */
 
 .titleSkills {
-    color: #A86E0F;
-    font-size: clamp(40px, 4vw, 80px);
-    margin: 0px;
+  color: #A86E0F;
+  font-size: clamp(40px, 4vw, 80px);
+  margin: 0px;
 
 }
+
 .containerSkillsPart {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 30%;
-  
+
 }
 
 .containerSkill {
@@ -379,11 +383,13 @@
 }
 
 .normalLogo {
+  object-fit: contain;
   width: 70px;
   height: 70px;
 }
 
 .specialLogo {
+  object-fit: contain;
   width: 60px;
   height: 70px;
 }
@@ -393,13 +399,13 @@
   position: absolute;
 }
 
-.containerPourcent:hover  {
+.containerPourcent:hover {
   opacity: 1;
   height: 80px;
   width: 80px;
   text-align: center;
   font-size: 1.5em;
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0, 0, 0, .7);
   color: #ffd796;
   border-style: solid;
   border-radius: 20%;
@@ -415,6 +421,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .skillSection {
   display: flex;
   align-items: center;
@@ -434,20 +441,23 @@
   display: flex;
   align-content: center;
   justify-content: center;
-  flex-direction: row;
-  background-color: blue;
 }
 
 .side {
   position: sticky;
   top: 0;
   height: 100vh;
-  width: 20%;
+  width: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  flex-direction: column;
+  background-color: #A86E0F;
+  /* background-color: #1B3D5C; */
   color: white;
+  font-size: 1.7em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .containerSlide {
@@ -455,39 +465,88 @@
   height: 400vh;
   flex-direction: column;
   display: flex;
-  width: 80%;
+  width: 95%;
 }
 
-.firstSlide {
+.slide:nth-child(odd) {
   width: 100%;
   height: 100vh;
-  background-color: red;
+  background-color: #ffd796;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
 }
 
-.secondSlide {
+.slide:nth-child(even) {
   width: 100%;
   height: 100vh;
-  background-color: green;
-  z-index: 1;
+  background-color: #1B3D5C;
+  display: flex;
+  flex-direction: row;
 }
 
+.textPortfolio {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 55%;
+  justify-content: flex-start;
+  padding: 2%;
 
-.thirdSlide {
-  height: 100vh;
-  background-color: yellow;
 }
 
-.fourthSlide {
-  height: 100vh;
-  background-color: orange;
+.rightSlide {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 45%;
+  height: 100%;
+  padding: 2%;
 }
 
-.fifthSlide {
-  height: 100vh;
-  background-color: purple;
+.oddskill {
+  max-width: 110px;
+  height: 55px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1%;
+  margin-left: 2%;
+  border-style: solid;
+  border-radius: 50% 20% / 10% 40%;
+  border-color: #1B3D5C;
+  border-width: 4px;
+  color: #1B3D5C;
+  font-size: clamp(8px, 4vw, 15px);
 }
 
+.evenskill {
+  max-width: 110px;
+  height: 55px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1%;
+  margin-left: 2%;
+  border-style: solid;
+  border-radius: 50% 20% / 10% 40%;
+  border-color: #ffd796;
+  border-width: 4px;
+  color: #ffd796;
+  font-size: clamp(8px, 4vw, 15px);
+}
 
+.titlePortfolioSlide {
+  color: #A86E0F;
+  margin-bottom: 20%;
+}
+
+.imgPortfolio {
+  margin-top: 2%!important;
+}
 
 
 
