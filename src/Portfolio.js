@@ -20,7 +20,7 @@ const Slide = (props) => {
                 <p>{props.data.description}</p>
                 {props.data.detail?.map((elem, index) => {
                     return (
-                        <ul key={index} className={styles.listCard}>
+                        <ul key={index} >
                             <li> {elem.title}
                                 <ul>
                                     {elem.task?.map((task, index) => {
