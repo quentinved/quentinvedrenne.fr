@@ -16,7 +16,7 @@ let portfolioElements = [
             title: "Create multi usage component"
         }
         ],
-        img: ["./aera.png", "./area2.png"]
+        img: ["./quentinvedrenne.gif"]
     },
     {
         id: 2,
@@ -44,7 +44,7 @@ let portfolioElements = [
             title: "Creation of an extension allow you to directly share your password and get your link without to go to the platform"
         }
         ],
-        img: ["./aera.png", "./area2.png"]
+        img: ["./sharepassword.gif"]
     }, {
         id: 3,
         title: "Area",
@@ -63,7 +63,7 @@ let portfolioElements = [
             title: "Containerize frontend backend application with docker-compose"
         }
         ],
-        img: ["./aera.png", "./area2.png"]
+        img: ["./area.gif"]
     }, {
         id: 4,
         title: "Dashboard",
@@ -86,7 +86,7 @@ let portfolioElements = [
             title: "Deploy the applicaiton on a vps thanks to pm2"
         }
         ],
-        img: ["./aera.png", "./area2.png"]
+        img: ["./dashboard.gif"]
     }, {
         id: 5,
         title: "Imgur mobile app",
@@ -124,7 +124,7 @@ let portfolioElements = [
             title: "Filter the displayed photos",
         },
         ],
-        img: ["./aera.png", "./area2.png"]
+        img: ["./imgur.gif"]
     },];
 
 export default portfolioElements;

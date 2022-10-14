@@ -34,7 +34,7 @@ const Slide = (props) => {
             </div>
             <div className={styles.rightSlide}>
                 {props.data.img && props.data.img.map((img, index) => {
-                    return (<Image src={img} width={600} height={450} key={index} alt={props.data.title} className={styles.imgPortfolio} />)
+                    return (<Image src={img} width={600} height={600} key={index} alt={props.data.title} className={styles.imgPortfolio} />)
                 })
                 }
             </div>
