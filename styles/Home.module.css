@@ -550,11 +550,31 @@
   border-radius: 5%;
 }
 
+.descriptionTitlePortfolio {
+  color: #A86E0F;
+  font-weight: 500;
+  font-size: 1.5em;
+}
 
+.descriptionPortfolio {
+  margin-top: -2%;
+  font-size: 1.1em;
 
+}
 
+.listPortfolio {
+  margin-top: -2%;
+  font-size: 1.2em;
+}
 
-
+.containerSkillsPortfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: -18%;
+  margin-bottom: 22%;
+}
 
 
 
