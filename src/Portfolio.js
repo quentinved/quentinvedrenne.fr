@@ -12,15 +12,17 @@ const Slide = (props) => {
                     <h1 className={styles.titlePortfolioSlide}>
                         {props.data.title}
                     </h1>
-                <div className={styles.containerSkills}>
+                <div className={styles.containerSkillsPortfolio}>
                     {props.data.skills && props.data.skills.map((elem, index) => {
                         return <h3 className={styles[props.classSkils]} key={index}>{elem}</h3>
                     })}
                 </div>
-                <p>{props.data.description}</p>
+                <p className={styles.descriptionTitlePortfolio}> Description</p>
+                <p className={styles.descriptionPortfolio}>{props.data.description}</p>
+                <p className={styles.descriptionTitlePortfolio}>My Jobs</p>
                 {props.data.detail?.map((elem, index) => {
                     return (
-                        <ul key={index} >
+                        <ul key={index}  className={styles.descriptionPortfolio}>
                             <li> {elem.title}
                                 <ul>
                                     {elem.task?.map((task, index) => {
@@ -34,7 +36,7 @@ const Slide = (props) => {
             </div>
             <div className={styles.rightSlide}>
                 {props.data.img && props.data.img.map((img, index) => {
-                    return (<Image src={img} width={600} height={600} key={index} alt={props.data.title} className={styles.imgPortfolio} />)
+                    return (<Image src={img} width={600} height={400} key={index} alt={props.data.title} className={styles.imgPortfolio} />)
                 })
                 }
             </div>
