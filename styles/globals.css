@@ -15,6 +15,12 @@ a {
   box-sizing: border-box;
 }
 
+:root {
+  --title: #A86E0F;
+  --background: #1B3D5C;
+  --text: #ffd796;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
