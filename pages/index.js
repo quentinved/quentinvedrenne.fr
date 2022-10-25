@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import Experience from '../src/Experience'
+import Experience from '../src/Timeline'
 import Footer from '../src/Footer'
 import Header from '../src/Header'
 import Hero from '../src/Hero'
