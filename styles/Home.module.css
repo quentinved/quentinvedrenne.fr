@@ -132,8 +132,8 @@
   flex-direction: column;
   position: relative;
   background-color: var(--background);
-  padding-bottom: 100px;
-  padding-top: 200px;
+  width: 100%;
+  height: 100%;
 }
 
 .timelinecontainer::before {
@@ -150,10 +150,10 @@
   background-color: var(--title);
   content: '';
   position: absolute;
-  margin-top: 10%;
+  /* margin-top: 10%; */
   left: calc(50% - 2px);
   width: 3px;
-  height: 80%;
+  height: 100%;
 }
 
 .dateCard {
@@ -186,7 +186,7 @@
 .containerSkills {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: flex-start!important;
   width: 100%;
 }
 
@@ -200,11 +200,11 @@
   padding: 1%;
   margin-left: 2%;
   border-style: solid;
-  border-radius: 50% 20% / 10% 40%;
+  border-radius: 10%;
   border-color: var(--background);
   border-width: 4px;
   color: var(--background);
-  font-size: clamp(8px, 4vw, 15px);
+  font-size: 1.2em;
 }
 
 .timelineitem {
@@ -338,7 +338,7 @@
 
   .timelineitemcontent,
   .timelineitem:nth-child(odd) .timelineitemcontent {
-    left: 39px;
+    left: 30px;
     width: 900px;
     align-items: flex-start;
     text-align: left;
@@ -347,6 +347,11 @@
   .timelineitemcontent {
     width: calc(100% - 4px);
     align-items: flex-start;
+  }
+  .skillsCard{
+  font-size: 0.8em;
+  height: 45px;
+  border-radius: 3%;
   }
 }
 
@@ -365,8 +370,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 30%;
-
+  width: 25%;
 }
 
 .containerSkill {
@@ -380,14 +384,20 @@
 
 .normalLogo {
   object-fit: contain;
-  width: 70px;
-  height: 70px;
+  width: 85px;
+  height: 85px;
 }
 
 .specialLogo {
   object-fit: contain;
-  width: 60px;
-  height: 70px;
+  width: 70px;
+  height: 80px;
+}
+
+.awsLogo{
+  object-fit: contain;
+  width: 100px;
+  height: 100px;
 }
 
 .containerPourcent {
@@ -419,6 +429,8 @@
 }
 
 .skillSection {
+  height: 75vh;
+  /* width: 100%; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -427,7 +439,11 @@
 
 @media only screen and (max-width: 767px) {
   .containerSkillsPart {
+    margin-top: 50%;
     width: 100%;
+  }
+  .containerSkill {
+    width: 50%;
   }
 }
 

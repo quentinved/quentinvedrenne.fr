@@ -25,18 +25,20 @@ const Skills = () => {
     return (
         <div className={styles.skillSection}>
             <p className={styles.titleSkills}>My Skills</p>
-            <p>Hover each language logo to see my learning pourcentage on it</p>
             <div className={styles.containerCenter}>
                 <div className={styles.containerSkillsPart}>
-                    <Skill src="./js.png" class={styles.normalLogo} directionLeft={false} pourcent="75%" />
-                    <Skill src="./ts.png" class={styles.normalLogo} directionLeft={false} pourcent="65%" />
-                    <Skill src="./react.png" class={styles.normalLogo} directionLeft={false} pourcent="85%" />
-                    <Skill src="./node.png" class={styles.normalLogo} directionLeft={false} pourcent="65%" />
-                    <Skill src="./next.png" class={styles.normalLogo} directionLeft={true} pourcent="55%" />
-                    <Skill src="./c.png" class={styles.specialLogo} directionLeft={true} pourcent="95%" />
-                    <Skill src="./cpp.png" class={styles.specialLogo} directionLeft={true} pourcent="85%" />
-                    <Skill src="./dock.png" class={styles.normalLogo} directionLeft={true} pourcent="45%" />
-                    <Skill src="./flask.png" class={styles.specialLogo} directionLeft={true} pourcent="35%" />
+                    <Skill src="./js.png" class={styles.normalLogo} directionLeft={false} />
+                    <Skill src="./ts.png" class={styles.normalLogo} directionLeft={false} />
+                    <Skill src="./react.png" class={styles.normalLogo} directionLeft={false} />
+                    <Skill src="./node.png" class={styles.normalLogo} directionLeft={false} />
+                    <Skill src="./next.png" class={styles.normalLogo} directionLeft={true} />
+                    <Skill src="./c.png" class={styles.specialLogo} directionLeft={true} />
+                    <Skill src="./gcp.png" class={styles.normalLogo} directionLeft={true} />
+                    <Skill src="./aws.png" class={styles.awsLogo} directionLeft={true} />
+                    <Skill src="./kube.png" class={styles.normalLogo} directionLeft={true} />
+                    <Skill src="./cpp.png" class={styles.specialLogo} directionLeft={true} />
+                    <Skill src="./dock.png" class={styles.normalLogo} directionLeft={true} />
+                    <Skill src="./python.png" class={styles.normalLogo} directionLeft={true} />
                 </div>
             </div>
         </div>
