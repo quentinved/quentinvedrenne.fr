@@ -6,11 +6,11 @@ const Skill = (props) => {
         <div className={styles.containerSkill}>
             <motion.img
                 initial={{
-                    x: props.directionLeft ? -200 : 200,
+                    y: props.directionLeft ? 100 : -100,
                     opacity: 0,
                 }}
                 transition={{ duration: 1 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 src={props.src}
                 className={props.class}
             />
