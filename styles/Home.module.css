@@ -596,14 +596,16 @@
   }
   .containerSlide {
     width: 100%;
-    height: 500vh;
+    height: 750vh;
   }
   .slide:nth-child(odd) {
     flex-direction: column;
+    height: 155vh;
   }
   .slide:nth-child(even) {
     flex-direction: column;
     align-items: center;
+    height: 155vh;
   }
 
   .descriptionTitlePortfolio {
@@ -618,8 +620,8 @@
   }
   .imgPortfolioContainer{
     position: relative;
-    width: 500px;
-    height: 285px;
+    width: 350px;
+    height: 185px;
   }
   .rightSlide {
     width: 100%;
