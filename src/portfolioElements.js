@@ -9,12 +9,16 @@ let portfolioElements = [
         description: "The goal of this project is to create my portfolio to search for my internship at the end of my degree",
         detail: [{
             id: 1,
-            title: "Understand and use Cloudflare Page",
+            title: "Understand and use Cloudflare Pages",
         },
         {
             id:2,
             title: "Create multi usage component"
-        }
+        },
+        {
+            id:3,
+            title: "Learn deeply NextJS"
+        },
         ],
         img: ["./quentinvedrenne.gif"]
     },
