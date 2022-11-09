@@ -62,9 +62,6 @@ const Story = () => {
             <p>
               Hi, my name is Quentin Vedrenne I’m a French Student from EPITECH and I’m researching an intern position as Software Engineer to conclude my fifth and last year of school from March to August 2023. With now three years in the IT development and 1 year in the role of project manager I’m confident that my knowledge will be a real asset to the team.
             </p>
-            <p>
-              skdkdk
-            </p>
           </motion.div>
         </div>
       </motion.div>
