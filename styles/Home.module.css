@@ -118,13 +118,12 @@
 }
 
 /* ---------------------------------- Timeline ---------------------------------- */
-
 .containerTitleExperience {
-  display: flex;
+display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 120%;
   background-color: #142a41;
 }
 
@@ -156,7 +155,6 @@
   background-color: var(--title);
   content: '';
   position: absolute;
-  /* margin-top: 10%; */
   left: calc(50% - 2px);
   width: 3px;
   height: 100%;
@@ -164,28 +162,36 @@
 
 .dateCard {
   color: var(--background);
-  font-size: clamp(10px, 4vw, 18px);
+  font-size: clamp(0.7em, 1vw, 1.1em);
+  margin-bottom: 15px;
 }
 
 .titleCard {
   margin-top: -2%;
   color: var(--background);
-  font-size: clamp(15px, 4vw, 23px);
+  font-weight: bold;
+  font-size: clamp(0.9em, 3vw, 1.5em);
 }
 
 .companyCard {
   margin-top: -3.5%;
   color: var(--background);
-  font-size: clamp(8px, 4vw, 15px);
+  font-weight: 600;
+  font-size: clamp(0.9em, 3vw, 1.3em);
+}
+
+.timelineitem:nth-child(even) .listCard {
+  direction: rtl;
 }
 
 .listCard {
   color: var(--background);
+  font-size: clamp(0.9em, 3vw, 1.5em);
 }
 
 .placeCard {
   color: var(--background);
-  font-size: clamp(8px, 4vw, 15px);
+  font-size: clamp(0.7em, 1vw, 1.1em);
   margin-top: -2.5%;
 }
 
@@ -194,10 +200,11 @@
   flex-wrap: wrap;
   justify-content: flex-start!important;
   width: 100%;
+  height: 100%;
 }
 
 .skillsCard {
-  max-width: 110px;
+  max-width: 150px;
   height: 55px;
   display: flex;
   text-align: center;
@@ -223,7 +230,7 @@
 }
 
 .timelineitem:nth-child(even) .containerSkills {
-  justify-content: flex-end;
+  justify-content: flex-end!important;
 }
 
 .timelineitem:nth-child(odd) {
@@ -311,12 +318,8 @@
 
 @media only screen and (max-width: 767px) {
   .timelinecontainer::after {
-    background-color: var(--title);
-    content: '';
-    position: absolute;
     left: calc(7%);
-    width: 3px;
-    height: 100%;
+    width: 2.5px;
   }
 
   .timelineitem {
@@ -327,14 +330,8 @@
 
   }
 
-  .timelinecontainer::after {
-    margin-top: 60%;
-    height: 71%;
-  }
-
   .timelineitem .timelineitemcontent .circle {
     left: -85px;
-    right: auto;
   }
 
   .timelineitem:nth-child(even) .timelineitemcontent::after {
@@ -343,21 +340,25 @@
   }
 
   .timelineitemcontent,
-  .timelineitem:nth-child(odd) .timelineitemcontent {
+  .timelineitem:nth-child(odd) {
     left: 30px;
-    width: 900px;
     align-items: flex-start;
     text-align: left;
   }
 
   .timelineitemcontent {
-    width: calc(100% - 4px);
-    align-items: flex-start;
+    width: 950px;
   }
+
   .skillsCard{
-  font-size: 0.8em;
-  height: 45px;
-  border-radius: 3%;
+    font-size: 0.7em;
+    height: 30px;
+    border-width: 2px;
+    border-radius: 3%;
+  }
+
+  .listCard {
+    direction: ltr!important;
   }
 }
 
@@ -368,8 +369,7 @@
 .titleSkills {
   color: var(--title);
   font-size: clamp(40px, 4vw, 80px);
-  margin: 0px;
-
+  margin-top: 25%;
 }
 
 .containerSkillsPart {
@@ -435,8 +435,8 @@
 }
 
 .skillSection {
-  height: 75vh;
-  /* width: 100%; */
+  height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -450,6 +450,23 @@
   }
   .containerSkill {
     width: 50%;
+  }
+  .normalLogo {
+    object-fit: contain;
+    width: 65px;
+    height: 65px;
+  }
+  
+  .specialLogo {
+    object-fit: contain;
+    width: 50px;
+    height: 60px;
+  }
+  
+  .awsLogo{
+    object-fit: contain;
+    width: 80px;
+    height: 80px;
   }
 }
 
