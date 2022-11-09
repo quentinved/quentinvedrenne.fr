@@ -95,7 +95,7 @@
   border-radius: 50px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1000px) {
   .storyContainer {
     flex-direction: column;
   }
@@ -316,7 +316,7 @@ display: flex;
   overflow: inherit;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1000px) {
   .timelinecontainer::after {
     left: calc(7%);
     width: 2.5px;
@@ -359,6 +359,14 @@ display: flex;
 
   .listCard {
     direction: ltr!important;
+  }
+
+  .containerSkills{
+    justify-content: center!important;
+  }
+
+  .timelineitem:nth-child(even) .containerSkills {
+    justify-content: center!important;
   }
 }
 
@@ -443,7 +451,7 @@ display: flex;
   background-color: var(--background);
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1000px) {
   .containerSkillsPart {
     margin-top: 50%;
     width: 100%;
@@ -621,7 +629,7 @@ display: flex;
   margin-bottom: 5%;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1000px) {
   .side {
     flex-direction: row;
     width: 100%;
