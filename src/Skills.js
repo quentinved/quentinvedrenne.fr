@@ -10,6 +10,7 @@ const Skill = (props) => {
                     opacity: 0,
                 }}
                 transition={{ duration: 1 }}
+                viewport={{ once: true, }}
                 whileInView={{ opacity: 1, y: 0 }}
                 src={props.src}
                 className={props.class}
@@ -23,25 +24,27 @@ const Skill = (props) => {
 
 const Skills = () => {
     return (
-        <div className={styles.skillSection}>
-            <p className={styles.titleSkills}>My Skills</p>
-            <div className={styles.containerCenter}>
-                <div className={styles.containerSkillsPart}>
-                    <Skill src="./js.png" class={styles.normalLogo} directionLeft={false} />
-                    <Skill src="./ts.png" class={styles.normalLogo} directionLeft={false} />
-                    <Skill src="./react.png" class={styles.normalLogo} directionLeft={false} />
-                    <Skill src="./node.png" class={styles.normalLogo} directionLeft={false} />
-                    <Skill src="./next.png" class={styles.normalLogo} directionLeft={true} />
-                    <Skill src="./c.png" class={styles.specialLogo} directionLeft={true} />
-                    <Skill src="./gcp.png" class={styles.normalLogo} directionLeft={true} />
-                    <Skill src="./aws.png" class={styles.awsLogo} directionLeft={true} />
-                    <Skill src="./kube.png" class={styles.normalLogo} directionLeft={true} />
-                    <Skill src="./cpp.png" class={styles.specialLogo} directionLeft={true} />
-                    <Skill src="./dock.png" class={styles.normalLogo} directionLeft={true} />
-                    <Skill src="./python.png" class={styles.normalLogo} directionLeft={true} />
+        <section id="skills">
+            <div className={styles.skillSection}>
+                <p className={styles.titleSkills}>My Skills</p>
+                <div className={styles.containerCenter}>
+                    <div className={styles.containerSkillsPart}>
+                        <Skill src="./js.png" class={styles.normalLogo} directionLeft={false} />
+                        <Skill src="./ts.png" class={styles.normalLogo} directionLeft={false} />
+                        <Skill src="./react.png" class={styles.normalLogo} directionLeft={false} />
+                        <Skill src="./node.png" class={styles.normalLogo} directionLeft={false} />
+                        <Skill src="./next.png" class={styles.normalLogo} directionLeft={true} />
+                        <Skill src="./c.png" class={styles.specialLogo} directionLeft={true} />
+                        <Skill src="./gcp.png" class={styles.normalLogo} directionLeft={true} />
+                        <Skill src="./aws.png" class={styles.awsLogo} directionLeft={true} />
+                        <Skill src="./kube.png" class={styles.normalLogo} directionLeft={true} />
+                        <Skill src="./cpp.png" class={styles.specialLogo} directionLeft={true} />
+                        <Skill src="./dock.png" class={styles.normalLogo} directionLeft={true} />
+                        <Skill src="./python.png" class={styles.normalLogo} directionLeft={true} />
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
