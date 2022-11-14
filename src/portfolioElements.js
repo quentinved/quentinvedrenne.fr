@@ -89,7 +89,7 @@ let portfolioElements = [
         type: "Personal",
         class: "slide",
         classSkils: "oddskill",
-        skills: ["NextJS", "React", "Cloudflare Pages"],
+        skills: ["React", "Cloudflare Pages", "Typeform"],
         description: "The goal of this project is to create my portfolio to search for my internship at the end of my degree",
         detail: [{
             id: 1,
