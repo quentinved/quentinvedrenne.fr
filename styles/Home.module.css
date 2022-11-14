@@ -449,7 +449,7 @@
 .titleSkills {
   color: var(--title);
   font-size: clamp(40px, 4vw, 80px);
-  margin-top: 25%;
+  margin-top: 10%;
 }
 
 .containerSkillsPart {
@@ -701,7 +701,7 @@
   justify-content: flex-start;
   width: 100%;
   margin-top: -18%;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 
 @media screen and (max-width: 1850px) and (min-width: 1400px) {
