@@ -57,7 +57,7 @@ let timelineElements = [
     skills: ["VBA", "Managment Process", "Typescript"],
     detail: [{
       id: 1,
-      title: "Developed a program to automate the statistics of goods received at the Clinic.",
+      title: "Developed a program to automate the statistics of goods received at the Clinic",
     },
     {
       id: 2,
@@ -92,7 +92,7 @@ let timelineElements = [
     skills: ["Software Engineer", "C", "C++", "React", "NodeJS", "Docker", "DevOps", "Kotlyn"],
     detail: [{
       id: 1,
-      title: "Development of a web platform to create a special workflow for standard (OnGoing - React / Golang)",
+      title: "Development of a web platform to create a special workflow for telephone switchboard (OnGoing - React / Golang)",
     },
     {
       id: 2,
@@ -107,10 +107,14 @@ let timelineElements = [
       title: "Development of a shell (C)",
     },
     {
+      id: 4,
+      title: "Re development of the fundamental libraries of C Language (C)",
+    },
+    {
       id: 5,
       title: "Development of a mobile application Instagram (Kotlyn)",
     }],
-    date: "2019 - 2023",
+    date: "2019 - 2023 (5 Year)",
   },
 ];
 
