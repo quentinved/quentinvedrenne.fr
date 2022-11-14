@@ -1,6 +1,90 @@
 let portfolioElements = [
     {
         id: 1,
+        title: "Kleasy.fr",
+        type: "School",
+        class: "slide",
+        classSkils: "oddskill",
+        skills: ["React", "GO", "GRPC", "Kubernetes"],
+        description: "Kleasy is the first SaaS platform that allows you to create a 360° switchboard in 1 click. Kleasy is perfect to orchestrate your ColdPhoning campaigns, manage company numbers for your employees or assist you with corporate support.",
+        detail: [{
+            id: 1,
+            title: "Ability to call someone",
+        },
+        {
+            id:2,
+            title: "Masked call"
+        },
+        {
+            id:3,
+            title: "Telephone permanence"
+        },
+        {
+            id:4,
+            title: "Messaging"
+        },
+        {
+            id:5,
+            title: "Black listing"
+        },
+        {
+            id:6,
+            title: "Shared contacts"
+        },
+        {
+            id:7,
+            title: "Shared call log"
+        },
+        {
+            id:8,
+            title: "Personal time routing"
+        },
+        {
+            id:9,
+            title: "Answer in browser"
+        },
+        {
+            id:10,
+            title: "Open API"
+        },
+        ],
+        img: ["./kleasy.gif"]
+    },
+    {
+        id: 2,
+        title: "Introduction to kubernetes",
+        type: "School",
+        class: "slide",
+        classSkils: "oddskill",
+        skills: ["Kubernetes", "Terraform", "GCP" , "CI/CD", , "Gitlab", "Helm", "Traefik","Docker"],
+        description: "The goal of this project is to wrapped a total project (Front / Back / Database) thanks to Terrraform on a kubernetes cluster (GCP), and to deploy it with a CI/CD pipeline (Gitlab).",
+        detail: [{
+            id: 1,
+            title: "Have a kubernetes with at least 2 nodes: on GCP with GKE",
+        },
+        {
+            id: 2,
+            title: "Deployment of this application with Terraform",
+            task: ["Front, connected to the back and scaled to more than 1 instance", "Back, connected to the DB, with secrets mounted", "DB, with a persistent volume"]
+        },
+        {
+            id:3,
+            title: "Use Helm to install Traefik (Back and Front need to be accessed through traefik with HTTPS)"
+        },
+        {
+            id: 4,
+            title: "Setup a Gitlab project with this CI-CD",
+            task: ["self hosted gitlab-runner with the Kubernetes executor and without the privileged mode enable", "Build image with kaniko from a Dockerfile", "Testing with a Preview accessible through https/Traefik", "Deployment update using a custom RBAC"]
+        },
+        {
+            id:5,
+            title: "Enable Dev to access a staging environment with Role Based Access Control."
+        },
+        ],
+        img: ["./kube.gif"]
+    },
+    {
+        id: 3,
         title: "Quentinvedrenne.fr",
         type: "Personal",
         class: "slide",
@@ -23,7 +107,7 @@ let portfolioElements = [
         img: ["./quentinvedrenne.gif"]
     },
     {
-        id: 2,
+        id: 4,
         title: "Sharepassword",
         type: "Personal",
         class: "slide",
@@ -50,7 +134,7 @@ let portfolioElements = [
         ],
         img: ["./sharepassword.gif"]
     }, {
-        id: 3,
+        id: 5,
         title: "Area",
         type: "School",
         class: "slide",
@@ -69,7 +153,7 @@ let portfolioElements = [
         ],
         img: ["./area.gif"]
     }, {
-        id: 4,
+        id: 6,
         title: "Dashboard",
         type: "School",
         class: "slide",
@@ -92,7 +176,7 @@ let portfolioElements = [
         ],
         img: ["./dashboard.gif"]
     }, {
-        id: 5,
+        id: 7,
         title: "Imgur mobile app",
         type: "School",
         class: "slide",
