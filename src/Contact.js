@@ -10,6 +10,12 @@ const Typeform = () => {
     </PopupButton>
 }
 
+export const Button = (props) => {
+    return (
+        <button className={styles.button64}><span href={props.link}>{props.text}</span></button>
+    )
+}
+
 const Contact = () => {
     return (
         <div className={styles.contactContainer}>
