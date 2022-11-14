@@ -738,6 +738,11 @@
 
   .containerSlide {
     width: 100%;
+    height: 770vh;
+  }
+
+  .slide {
+    height: 110vh!important;
   }
 
   .rightSlide {
@@ -771,18 +776,20 @@
 
   .containerSlide {
     width: 100%;
-    height: 100% !important;
+    height: 1295vh;
+  }
+
+  .slide {
+    height: 185vh!important;
   }
 
   .slide:nth-child(odd) {
     flex-direction: column;
-    height: 165vh;
   }
 
   .slide:nth-child(even) {
     flex-direction: column;
     align-items: center;
-    height: 165vh;
   }
 
   .descriptionTitlePortfolio {
