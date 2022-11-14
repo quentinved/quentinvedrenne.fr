@@ -551,6 +551,10 @@
     width: 80px;
     height: 80px;
   }
+
+  .titleSkills {
+    margin-top: 25%;
+  }
 }
 
 /* ---------------------------------- Portfolio ---------------------------------- */
@@ -776,11 +780,11 @@
 
   .containerSlide {
     width: 100%;
-    height: 1295vh;
+    height: 1435vh;
   }
 
   .slide {
-    height: 185vh!important;
+    height: 205vh!important;
   }
 
   .slide:nth-child(odd) {
