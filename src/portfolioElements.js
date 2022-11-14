@@ -55,7 +55,7 @@ let portfolioElements = [
         title: "Introduction to kubernetes",
         type: "School",
         class: "slide",
-        classSkils: "oddskill",
+        classSkils: "evenskill",
         skills: ["Kubernetes", "Terraform", "GCP" , "CI/CD", , "Gitlab", "Helm", "Traefik","Docker"],
         description: "The goal of this project is to wrapped a total project (Front / Back / Database) thanks to Terrraform on a kubernetes cluster (GCP), and to deploy it with a CI/CD pipeline (Gitlab).",
         detail: [{
