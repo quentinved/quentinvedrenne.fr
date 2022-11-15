@@ -25,7 +25,7 @@ const TimelineItem = (x) => {
         <motion.div
             initial="offscreen"
             whileInView="onscreen"
-            viewport={{ once: true,  }}
+            viewport={{ once: true, }}
             className={styles.timelineitem}
             key={x.data.id}
         >
@@ -39,19 +39,19 @@ const TimelineItem = (x) => {
                         return <h3 className={styles.skillsCard} key={index}>{elem}</h3>
                     })}
                 </div>
-                {x.data.detail?.map((elem, index) => {
-                    return (
-                        <ul key={index} className={styles.listCard}>
-                            <li> {elem.title}
+                <ul className={styles.listCard}>
+                    {x.data.detail?.map((elem, index) => {
+                        return (
+                            <li key={index}> {elem.title}
                                 <ul>
                                     {elem.task?.map((task, index) => {
                                         return <li key={index}>{task}</li>
                                     })}
                                 </ul>
                             </li>
-                        </ul>
-                    )
-                })}
+                        )
+                    })}
+                </ul>
                 <span className={styles.circle}>
                     {x.data.type == "experience" ? <Image className={styles.workCircle} width="50" height="50" src='/work.svg' alt='oui' /> : <Image className={styles.schoolCircle} width="50" height="50" src='/school.svg' alt='oui' />}
                 </span>
@@ -63,21 +63,21 @@ const TimelineItem = (x) => {
 const Experience = () => {
     return (
         <section id="timeline-section">
-                <motion.div
-                    className={styles.containerTitleExperience}
-                    initial="offscreen"
-                    whileInView="onscreen"
-                    viewport={{ once: true, amount: 0.4 }}
-                >
-                    <motion.div variants={storyAnim} className={styles.titleExperience}>
-                        My experiences
-                    </motion.div>
+            <motion.div
+                className={styles.containerTitleExperience}
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.4 }}
+            >
+                <motion.div variants={storyAnim} className={styles.titleExperience}>
+                    My experiences
                 </motion.div>
-                <div className={styles.timelinecontainer}>
-                    {timelineElements.map((data) => {
-                        return <TimelineItem data={data} key={data.id} />
-                    })}
-                </div>
+            </motion.div>
+            <div className={styles.timelinecontainer}>
+                {timelineElements.map((data) => {
+                    return <TimelineItem data={data} key={data.id} />
+                })}
+            </div>
         </section>
     )
 }

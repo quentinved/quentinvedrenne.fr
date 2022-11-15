@@ -1,7 +1,8 @@
 let portfolioElements = [
     {
         id: 1,
-        title: "Kleasy.fr",
+        title: "Kleasy",
+        titleref: "https://kleasy.fr/",
         type: "School",
         class: "slide",
         classSkils: "oddskill",
@@ -86,6 +87,7 @@ let portfolioElements = [
     {
         id: 3,
         title: "Quentinvedrenne.fr",
+        titleref: "https://quentinvedrenne.fr/",
         type: "Personal",
         class: "slide",
         classSkils: "oddskill",
@@ -109,6 +111,7 @@ let portfolioElements = [
     {
         id: 4,
         title: "Sharepassword",
+        titleref: "https://sharepassword-quentinvedrenne.fr/",
         type: "Personal",
         class: "slide",
         classSkils: "evenskill",
