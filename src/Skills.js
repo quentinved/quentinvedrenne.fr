@@ -33,8 +33,8 @@ const Skills = () => {
                         <Skill src="./ts.png" class={styles.normalLogo} directionLeft={false} />
                         <Skill src="./react.png" class={styles.normalLogo} directionLeft={false} />
                         <Skill src="./node.png" class={styles.normalLogo} directionLeft={false} />
-                        <Skill src="./next.png" class={styles.normalLogo} directionLeft={true} />
-                        <Skill src="./c.png" class={styles.specialLogo} directionLeft={true} />
+                        <Skill src="./next.png" class={styles.normalLogo} directionLeft={false} />
+                        <Skill src="./c.png" class={styles.specialLogo} directionLeft={false} />
                         <Skill src="./gcp.png" class={styles.normalLogo} directionLeft={true} />
                         <Skill src="./aws.png" class={styles.awsLogo} directionLeft={true} />
                         <Skill src="./kube.png" class={styles.normalLogo} directionLeft={true} />

@@ -10,7 +10,9 @@ const Slide = (props) => {
         <div className={styles[props.class]}>
             <div className={styles.textPortfolio}>
                 <h1 className={styles.titlePortfolioSlide}>
-                    {props.data.title}
+                    <a href={props.data.titleref}>
+                        {props.data.title}
+                    </a>
                 </h1>
                 <div className={styles.containerSkillsPortfolio}>
                     {props.data.skills && props.data.skills.map((elem, index) => {
@@ -20,26 +22,26 @@ const Slide = (props) => {
                 <p className={styles.descriptionTitlePortfolio}> Description</p>
                 <p className={styles.descriptionPortfolio}>{props.data.description}</p>
                 <p className={styles.descriptionTitlePortfolio}>My Jobs</p>
-                {props.data.detail?.map((elem, index) => {
-                    return (
-                        <ul key={index} className={styles.descriptionPortfolio}>
-                            <li> {elem.title}
+                <ul className={styles.descriptionPortfolio}>
+                    {props.data.detail?.map((elem, index) => {
+                        return (
+                            <li  key={index}> {elem.title}
                                 <ul>
                                     {elem.task?.map((task, index) => {
                                         return <li key={index}>{task}</li>
                                     })}
                                 </ul>
                             </li>
-                        </ul>
-                    )
-                })}
+                        )
+                    })}
+                </ul>
             </div>
             <div className={styles.rightSlide}>
                 {props.data.img && props.data.img.map((img, index) => {
                     return (
-                    <div className={styles.imgPortfolioContainer} key={index}>
-                        <Image src={img} key={index} alt={props.data.title} className={styles.imgPortfolio} layout='fill' />
-                    </div>
+                        <div className={styles.imgPortfolioContainer} key={index}>
+                            <Image src={img} key={index} alt={props.data.title} className={styles.imgPortfolio} layout='fill' />
+                        </div>
                     )
                 })
                 }
