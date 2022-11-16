@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react'
 import styles from '../styles/Home.module.css'
 import portfolioElements from './portfolioElements'
 import Image from 'next/image'
@@ -25,7 +24,7 @@ const Slide = (props) => {
                 <ul className={styles.descriptionPortfolio}>
                     {props.data.detail?.map((elem, index) => {
                         return (
-                            <li  key={index}> {elem.title}
+                            <li key={index}> {elem.title}
                                 <ul>
                                     {elem.task?.map((task, index) => {
                                         return <li key={index}>{task}</li>
@@ -54,18 +53,20 @@ const Portfolio = () => {
 
     const portfolio = ["p", "o", "r", "t", "f", "o", "l", "i", "o"]
     return (
-        <div className={styles.containerPortfolio}>
-            <div className={styles.side}>
-                {portfolio.map((letter, index) => {
-                    return <p key={index}>{letter}</p>
-                })}
+        <section id="portfolio-section">
+            <div className={styles.containerPortfolio}>
+                <div className={styles.side}>
+                    {portfolio.map((letter, index) => {
+                        return <p key={index}>{letter}</p>
+                    })}
+                </div>
+                <div className={styles.containerSlide}>
+                    {portfolioElements.map((project) => {
+                        return <Slide key={project.id} class={project.class} classSkils={project.classSkils} data={project} />
+                    })}
+                </div>
             </div>
-            <div className={styles.containerSlide}>
-                {portfolioElements.map((project) => {
-                    return <Slide key={project.id} class={project.class} classSkils={project.classSkils} data={project} />
-                })}
-            </div>
-        </div>
+        </section>
     )
 }
 

@@ -24,7 +24,7 @@ const Skill = (props) => {
 
 const Skills = () => {
     return (
-        <section id="skills">
+        <section id="skills-section">
             <div className={styles.skillSection}>
                 <p className={styles.titleSkills}>My Skills</p>
                 <div className={styles.containerCenter}>

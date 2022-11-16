@@ -12,23 +12,25 @@ const Typeform = () => {
 
 const Contact = () => {
     return (
-        <div className={styles.contactContainer}>
-            <div className={styles.contactTitleContainer}>
-                <h3 className={styles.titleContact}> Contact </h3>
-            </div>
-            <div className={styles.typeformContainer}>
-                <p className={styles.stillthereContact}>Still There ?</p>
-                <Typeform />
-                <div className={styles.socialnetworkContainer}>
-                    <div className={styles.socialnetworkImg}>
-                        <Image src="/github.png" alt="arrow" layout="fill" className={styles.socialnetworkImg} />
-                    </div>
-                    <div className={styles.socialnetworkImg}>
-                        <Image src="/linkedin.png" alt="arrow" layout="fill" className={styles.socialnetworkImg} />
+        <section id="contact-section">
+            <div className={styles.contactContainer}>
+                <div className={styles.contactTitleContainer}>
+                    <h3 className={styles.titleContact}> Contact </h3>
+                </div>
+                <div className={styles.typeformContainer}>
+                    <p className={styles.stillthereContact}>Still There ?</p>
+                    <Typeform />
+                    <div className={styles.socialnetworkContainer}>
+                        <div className={styles.socialnetworkImg}>
+                            <Image src="/github.png" alt="arrow" layout="fill" className={styles.socialnetworkImg} />
+                        </div>
+                        <div className={styles.socialnetworkImg}>
+                            <Image src="/linkedin.png" alt="arrow" layout="fill" className={styles.socialnetworkImg} />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
