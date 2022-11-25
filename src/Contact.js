@@ -21,11 +21,13 @@ const Contact = () => {
                     <p className={styles.stillthereContact}>Still There ?</p>
                     <Typeform />
                     <div className={styles.socialnetworkContainer}>
-                        <div className={styles.socialnetworkImg}>
+                        {/* <div className={styles.socialnetworkImg}>
                             <Image src="/github.png" alt="arrow" layout="fill" className={styles.socialnetworkImg} />
-                        </div>
+                        </div> */}
                         <div className={styles.socialnetworkImg}>
-                            <Image src="/linkedin.png" alt="arrow" layout="fill" className={styles.socialnetworkImg} />
+                            <a href="https://www.linkedin.com/in/quentin-vedrenne/">
+                                <Image src="/linkedin.png" alt="arrow" layout="fill" className={styles.socialnetworkImg} />
+                            </a>
                         </div>
                     </div>
                 </div>
