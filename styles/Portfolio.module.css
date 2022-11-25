@@ -25,6 +25,33 @@
     z-index: 8;
 }
 
+.containerSkillsPortfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 100px;
+    /* margin-top: -18%; */
+    /* margin-bottom: 2%; */
+}
+
+.containerTitle {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+}
+
+
+.test {
+    object-fit: contain;
+
+    /* position: relative; */
+
+    /* margin-left: 5%!important; */
+    /* width: 3px!important; */
+}
+
 .containerSlide {
     position: relative;
     min-height: 300vh;
@@ -109,7 +136,7 @@
 .titlePortfolioSlide {
     text-decoration: underline;
     color: var(--title);
-    margin-bottom: 20%;
+    margin-right: 15px;
 }
 
 .imgPortfolio {
@@ -139,14 +166,7 @@
     font-size: 1.2em;
 }
 
-.containerSkillsPortfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 100%;
-    margin-top: -18%;
-    margin-bottom: 10%;
-}
+
 
 /* Todo: Other way for image responsive */
 @media screen and (max-width: 1850px) and (min-width: 1400px) {
@@ -204,8 +224,12 @@
 
     .containerSkillsPortfolio {
         justify-content: center;
+        margin-bottom: 2%;
     }
 
+    .containerTitle {
+        min-height: 100px;
+    }
     .descriptionTitlePortfolio {
         margin-top: 0%;
         text-align: center;

@@ -8,11 +8,16 @@ const Slide = (props) => {
     return (
         <div className={styles[props.class]}>
             <div className={styles.textPortfolio}>
-                <h1 className={styles.titlePortfolioSlide}>
-                    <a href={props.data.titleref}>
-                        {props.data.title}
-                    </a>
-                </h1>
+                <div className={styles.containerTitle}>
+                    <h1 className={styles.titlePortfolioSlide}>
+                        <a href={props.data.titleref}>
+                            {props.data.title}
+                        </a>
+                    </h1>
+                    {props.data.github && <a href={props.data.github}>
+                        <Image src="github.png" alt="github" width={30} height={30} className={styles.test}/>
+                    </a>}
+                </div>
                 <div className={styles.containerSkillsPortfolio}>
                     {props.data.skills && props.data.skills.map((elem, index) => {
                         return <h3 className={styles[props.classSkils]} key={index}>{elem}</h3>
