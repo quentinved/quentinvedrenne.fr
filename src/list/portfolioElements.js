@@ -88,6 +88,7 @@ let portfolioElements = [
         id: 3,
         title: "Quentinvedrenne.fr",
         titleref: "https://quentinvedrenne.fr/",
+        github: "https://github.com/quentinved/quentinvedrenne.fr",
         type: "Personal",
         class: "slide",
         classSkils: "oddskill",
