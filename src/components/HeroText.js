@@ -1,6 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Hero.module.css'
 
 const AnimatedTextWord = ({ text, isSubtitle }) => {
   const words = text.split(" ");

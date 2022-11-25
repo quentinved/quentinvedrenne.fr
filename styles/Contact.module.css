@@ -1,0 +1,115 @@
+/* ---------------------------------- Contact ---------------------------------- */
+
+.contactContainer {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.stillthereContact {
+    font-size: clamp(15px, 4vw, 25px);
+    color: var(--text);
+}
+
+.contactTitleContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleContact {
+    font-size: clamp(40px, 4vw, 100px);
+    color: var(--title);
+}
+
+.typeformContainer {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.button64 {
+    align-items: center;
+    background-image: linear-gradient(144deg, var(--text), var(--title) 50%);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: var(--title) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: var(--text);
+    display: flex;
+    font-size: 24px;
+    line-height: 1em;
+    width: 400px;
+    height: 75px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.button64:active,
+.button64:hover {
+    outline: 0;
+}
+
+.button64 span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #142a41;
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.button64:hover span {
+    color: #142a41;
+    background: none;
+}
+
+.socialnetworkContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin-top: 5%;
+}
+
+.socialnetworkImg {
+    margin-left: 3%;
+    position: relative;
+    width: 55px;
+    height: 55px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .button64 {
+        width: 300px;
+        font-size: 20px;
+        min-width: 196px;
+    }
+
+    .contactContainer {
+        flex-direction: column;
+    }
+
+    .socialnetworkImg {
+        width: 40px;
+        height: 40px;
+    }
+}

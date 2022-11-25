@@ -1,0 +1,123 @@
+/* ---------------------------------- Story ---------------------------------- */
+
+.storyContainer {
+    min-height: 100vh;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    background-color: #142a41;
+}
+
+.aboutme {
+    width: 35%;
+    height: 20%;
+    color: var(--title);
+}
+
+.textContainer {
+    width: 65%;
+    height: 100%;
+    padding-right: 5%;
+    font-size: clamp(10px, 4vw, 20px);
+    color: var(--text);
+}
+
+.titleStory {
+    text-align: center;
+    font-size: clamp(40px, 4vw, 100px);
+}
+
+.containerImg {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.nextImg {
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+
+.epitechButton {
+    align-items: center;
+    background-image: linear-gradient(144deg, var(--text), var(--title) 50%);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: var(--title) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: var(--text);
+    display: flex;
+    font-size: 24px;
+    line-height: 1em;
+    width: 400px;
+    height: 75px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.epitechButton:active,
+.epitechButton:hover {
+    outline: 0;
+}
+
+.epitechButton span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #142a41;
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.epitechButton:hover span {
+    color: #142a41;
+    background: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .storyContainer {
+        flex-direction: column;
+    }
+
+    .aboutme {
+        height: 30%;
+        margin-top: 25%;
+    }
+
+    .story {
+        width: 100%;
+        height: 35%;
+        padding: 40px;
+    }
+
+    .textContainer {
+        text-align: center;
+        width: 85%;
+        padding-right: 0%;
+    }
+
+    .buttonContainer {
+        margin-top: 5%;
+    }
+
+    .epitechButton {
+        width: 240px;
+        height: 50px;
+        font-size: 15px;
+        min-width: 196px;
+    }
+}

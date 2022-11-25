@@ -1,15 +1,16 @@
 import { useEffect, useState } from 'react'
-import Experience from '../src/Timeline'
-import Footer from '../src/Footer'
-import Header from '../src/Header'
-import Hero from '../src/Hero'
-import Skills from '../src/Skills'
-import Story from '../src/Story'
+import Experience from '../src/components/Timeline'
+import Footer from '../src/components/Footer'
+import Header from '../src/components/Header'
+import Hero from '../src/components/Hero'
+import Skills from '../src/components/Skills'
+import Story from '../src/components/Story'
 import styles from '../styles/Home.module.css'
-import Portfolio from '../src/Portfolio'
-import Contact from '../src/Contact'
-import Burger from '../src/Burger'
-import { MenuButton } from '../src/Menubutton'
+import stylesBurger from '../styles/Burger.module.css'
+import Portfolio from '../src/components/Portfolio'
+import Contact from '../src/components/Contact'
+import Burger from '../src/components/Burger'
+import { MenuButton } from '../src/components/Menubutton'
 
 export default function Home() {
 
@@ -17,8 +18,8 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.containerBurger}>
-        <a className={styles.burger}>
+      <div className={stylesBurger.containerBurger}>
+        <a className={stylesBurger.burger}>
           <MenuButton
             isOpen={burger}
             onClick={() => setBurger(!burger)}
