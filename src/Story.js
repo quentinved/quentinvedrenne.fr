@@ -66,9 +66,9 @@ const Story = () => {
               
             </p>
           </motion.div>
-          <div className={styles.buttonContainer}>
+          {/* <div className={styles.buttonContainer}>
             <button href="https://www.epitech.eu/fr/formations/epitech-en-5-ans-international/" className={styles.epitechButton}><span>Learn more about my school 👀</span></button>
-          </div>
+          </div> */}
         </div>
       </motion.div>
     </section>

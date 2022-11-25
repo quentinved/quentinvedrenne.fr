@@ -655,7 +655,7 @@
 
 .slide:nth-child(even) {
   width: 100%;
-  min-height: 100vh;
+  min-height: 10vh;
   background-color: var(--background);
   color: var(--text);
   display: flex;
@@ -928,7 +928,7 @@
 }
 
 .socialnetworkImg {
-  margin-left: 3%;
+  /* margin-left: 3%; */
   position: relative;
   width: 55px;
   height: 55px;
