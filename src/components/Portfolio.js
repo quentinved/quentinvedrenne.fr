@@ -1,5 +1,5 @@
-import styles from '../styles/Home.module.css'
-import portfolioElements from './portfolioElements'
+import styles from '../../styles/Portfolio.module.css'
+import portfolioElements from '../list/portfolioElements'
 import Image from 'next/image'
 
 

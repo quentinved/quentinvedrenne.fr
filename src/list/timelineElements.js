@@ -15,7 +15,7 @@ let timelineElements = [
       title: "Spring 2022 (Computer Science - Engineer) / 3.5 GPA",
 
     }
-  ],
+    ],
     date: "August 2021 - June 2022 (10 months)",
   },
   {
@@ -48,7 +48,7 @@ let timelineElements = [
     detail: [{
       id: 1,
       title: "Scrum Master for newspapers website",
-      task: ["Made a link between the journalist and the development team for rebuilt the back office" , "Maintain and add features for the all newpaper websites"]
+      task: ["Made a link between the journalist and the development team for rebuilt the back office", "Maintain and add features for the all newpaper websites"]
 
     }],
     date: "April 2020 - November 2020 (8 Months)",
@@ -103,7 +103,7 @@ let timelineElements = [
     id: 6,
     title: "Developer - Internship",
     type: "experience",
-    
+
     location: "Geneva, Swirtzeland",
     company_name: "Clinique Generale Beaulieu",
     skills: ["VBA", "Managment Process", "Typescript"],
@@ -115,7 +115,7 @@ let timelineElements = [
       id: 2,
       title: "Participated in the development of an automated supplier statistics program that shows the order management activity and the financial aspect of the department",
     }],
-        date: "July 2018 - August 2018 (2 Months)",
+    date: "July 2018 - August 2018 (2 Months)",
   }
 ];
 

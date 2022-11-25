@@ -1,25 +1,11 @@
-import styles from '../styles/Home.module.css'
-import timelineElements from './timelineElements'
+import styles from '../../styles/Timeline.module.css'
+import timelineElements from '../list/timelineElements'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { storyAnim } from './Story'
+import { cardVariants } from '../animation/TimelineItem'
 
 const TimelineItem = (x) => {
-
-    const cardVariants = {
-        offscreen: {
-            opacity: 0,
-        },
-        onscreen: {
-            y: 50,
-            opacity: 1,
-            transition: {
-                type: "swing",
-                bounce: 0.2,
-                duration: 0.5
-            }
-        }
-    };
 
     return (
         <motion.div
@@ -61,6 +47,7 @@ const TimelineItem = (x) => {
 }
 
 const Experience = () => {
+
     return (
         <section id="timeline-section">
             <motion.div

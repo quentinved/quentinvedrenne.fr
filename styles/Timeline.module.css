@@ -1,0 +1,259 @@
+/* ---------------------------------- Timeline ---------------------------------- */
+.containerTitleExperience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #142a41;
+}
+
+.titleExperience {
+    color: var(--title);
+    font-size: clamp(40px, 4vw, 80px);
+}
+
+.timelinecontainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--background);
+    width: 100%;
+    height: 100%;
+}
+
+.timelinecontainer::before {
+    content: ' ';
+    position: absolute;
+    top: -0px;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom, #142a41, transparent);
+    z-index: 2;
+}
+
+.timelinecontainer::after {
+    background-color: var(--title);
+    content: '';
+    position: absolute;
+    left: calc(50% - 2px);
+    width: 3px;
+    height: 100%;
+}
+
+.dateCard {
+    color: var(--background);
+    font-size: clamp(0.9em, 1vw, 1.3em);
+    margin-bottom: 15px;
+}
+
+.titleCard {
+    margin-top: -2%;
+    color: var(--background);
+    font-weight: bold;
+    font-size: clamp(0.9em, 3vw, 1.5em);
+}
+
+.companyCard {
+    margin-top: -3.5%;
+    color: var(--background);
+    font-weight: 600;
+    font-size: clamp(0.9em, 3vw, 1.3em);
+}
+
+.timelineitem:nth-child(even) .listCard {
+    direction: rtl;
+}
+
+.listCard {
+    color: var(--background);
+    font-size: clamp(0.9em, 3vw, 1.5em);
+}
+
+.placeCard {
+    color: var(--background);
+    font-size: clamp(0.7em, 1vw, 1.1em);
+    margin-top: -2.5%;
+}
+
+.containerSkills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start !important;
+    width: 100%;
+    height: 100%;
+}
+
+.skillsCard {
+    max-width: 150px;
+    height: 55px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1%;
+    margin-left: 2%;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--background);
+    border-width: 4px;
+    color: var(--background);
+    font-size: 1.2em;
+}
+
+.timelineitem {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 60px;
+    margin: 10px 0;
+    width: 50%;
+    z-index: 1;
+}
+
+.timelineitem:nth-child(even) .containerSkills {
+    justify-content: flex-end !important;
+}
+
+.timelineitem:nth-child(odd) {
+    align-self: flex-end;
+    justify-content: flex-start;
+    padding-right: 10px;
+    padding-left: 60px;
+}
+
+.timelineitem:nth-child(odd) .timelineitemcontent .circle {
+    left: -85px;
+    right: auto;
+}
+
+.timelineitem:nth-child(odd) .timelineitemcontent {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.timelineitem:nth-child(odd) .timelineitemcontent::after {
+    right: auto;
+    left: -7.5px;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.timelineitemcontent {
+    background-color: var(--text);
+    border-radius: 5px;
+    box-shadow: 0 0 5px #4277A8;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    padding: 15px;
+    max-width: 85%;
+    width: 700px;
+    text-align: right;
+}
+
+.timelineitemcontent::after {
+    background-color: var(--text);
+    content: '';
+    box-shadow: 1px -1px 1px #4277A8;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: calc(50%);
+    right: -7.5px;
+}
+
+.timelineitemcontent .circle {
+    border-radius: 15px;
+    position: absolute;
+    top: calc(50% - 15px);
+    width: 50px;
+    height: 50px;
+    right: -85px;
+    border: 2px solid var(--title);
+    padding-right: 1.5%;
+
+}
+
+.circle {
+    background-color: var(--background);
+    width: 100%;
+    height: 100%;
+    padding-right: 0% !important;
+
+}
+
+.workCircle {
+    padding-top: 15px !important;
+    margin-bottom: 7px !important;
+    overflow: inherit;
+
+}
+
+.schoolCircle {
+    padding-top: 15px !important;
+    margin-bottom: 7px !important;
+    overflow: inherit;
+    overflow: inherit;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 950px) {
+    .containerSkillsPart {
+        width: 55% !important;
+        margin-top: 15%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .timelinecontainer::after {
+        left: calc(7%);
+        width: 2.5px;
+    }
+
+    .timelineitem {
+        width: 100%;
+        justify-content: flex-start;
+        padding-left: 60px;
+        padding-right: 0px;
+
+    }
+
+    .timelineitem .timelineitemcontent .circle {
+        left: -85px;
+    }
+
+    .timelineitem:nth-child(even) .timelineitemcontent::after {
+        left: -7.5px;
+        box-shadow: -1px 1px 1px #4277A8;
+    }
+
+    .timelineitemcontent,
+    .timelineitem:nth-child(odd) {
+        left: 30px;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .timelineitemcontent {
+        width: 950px;
+    }
+
+    .skillsCard {
+        font-size: 0.7em;
+        height: 30px;
+        border-width: 2px;
+        border-radius: 5px;
+    }
+
+    .listCard {
+        direction: ltr !important;
+    }
+
+    .containerSkills {
+        justify-content: center !important;
+    }
+
+    .timelineitem:nth-child(even) .containerSkills {
+        justify-content: center !important;
+    }
+}
