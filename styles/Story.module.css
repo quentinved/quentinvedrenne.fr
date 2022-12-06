@@ -24,6 +24,10 @@
     color: var(--text);
 }
 
+.textContainer a {
+    text-decoration: underline;
+}
+
 .titleStory {
     text-align: center;
     font-size: clamp(40px, 4vw, 100px);

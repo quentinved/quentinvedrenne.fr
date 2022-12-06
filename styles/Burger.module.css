@@ -25,6 +25,7 @@
     position: sticky;
     height: 10px;
     z-index: 10;
+    top: 0px
   }
   
   .menu {

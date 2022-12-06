@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 100vh;
     background-color: #142a41;
 }
 
@@ -25,9 +24,9 @@
 .timelinecontainer::before {
     content: ' ';
     position: absolute;
-    top: -0px;
+    top: 0px;
     width: 100%;
-    height: 200px;
+    height: 150px;
     background: linear-gradient(to bottom, #142a41, transparent);
     z-index: 2;
 }
