@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Experience from '../src/components/Timeline'
 import Footer from '../src/components/Footer'
 import Header from '../src/components/Header'

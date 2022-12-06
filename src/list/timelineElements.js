@@ -20,7 +20,7 @@ let timelineElements = [
   },
   {
     id: 2,
-    title: "Co-Founder / Lead developer",
+    title: "Co-Founder / Project manager / Lead developer",
     type: "experience",
     company_name: "Rubrash - JOB",
     location: "Lyon, France",
