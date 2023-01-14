@@ -65,7 +65,7 @@ let timelineElements = [
       title: "Agile Software Integrator",
       task: ["Developer full stack for a platform to predict the impact of the stock market thanks to social networks (Angular)"]
     }],
-    date: "September 2019 -  January 2019 (4 Months)",
+    date: "September 2019 -  January 2020 (4 Months)",
   },
   {
     id: 5,
