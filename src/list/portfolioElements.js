@@ -1,11 +1,63 @@
 let portfolioElements = [
     {
+        id: 0,
+        title: "Serverless and AWS",
+        type: "School",
+        class: "slide",
+        classSkils: "oddskill",
+        skills: ["Serverless", "GO", "Vitejs", "AWS", "Lambda", "DynamoDB", "S3", "API Gateway", "Cloudfront", "CloudFormation", "Cognito", "SAM", "CI/CD", "Github Actions"],
+        description: "The goal of this project is to create a serverless application with AWS services.All the resources have to be create with CloudFormation and the CI/CD pipeline have to be done with Github Actions.",
+        detail: [{
+            id: 1,
+            title: "Lambda function with GO",
+            task: [
+                "Create an Article",
+                "Get an Article",
+                "List Articles",
+                "Update an Article",
+                "Delete an Article",
+                "Research by Tag"
+            ],
+        },
+        {
+            id: 2,
+            title: "IHM",
+            task: [
+                "Create and Login user with Cognito",
+                "Create an Article",
+                "Get an Article",
+                "List Articles",
+                "Update an Article",
+                "Delete an Article",
+                "Research by Tag"
+            ],
+        },
+        {
+            id: 3,
+            title: "Devops",
+            task: [
+                "Create a CI/CD pipeline with Github Actions",
+                "Create a CloudFormation template for the infrastructure",
+                "Use Cloudfront to serve the static website",
+                "Use S3 to store the static website",
+                "Use API Gateway to expose the Lambda functions",
+                "Use DynamoDB to store the data",
+                "Use Cognito to manage the users",
+                "Create a Dashboard with CloudWatch"
+            ],
+        }
+        ],
+        img: ["./serverless.gif"],
+        github: ["https://github.com/quentinved/epitech-crm-back", "https://github.com/quentinved/Epitech-crm-front"],
+        titleref: ["https://github.com/quentinved"],
+    },
+    {
         id: 1,
         title: "Kleasy",
         titleref: "https://kleasy.fr/",
         type: "School",
         class: "slide",
-        classSkils: "oddskill",
+        classSkils: "evenskill",
         skills: ["React", "GO", "GRPC", "Kubernetes"],
         description: "Kleasy is the first SaaS platform that allows you to create a 360° switchboard in 1 click. Kleasy is perfect to orchestrate your ColdPhoning campaigns, manage company numbers for your employees or assist you with corporate support.",
         detail: [{
@@ -56,9 +108,9 @@ let portfolioElements = [
         title: "Introduction to kubernetes",
         type: "School",
         titleref: "https://gitlab.com/teksf",
-        github: "https://gitlab.com/teksf",
+        github: ["https://gitlab.com/teksf"],
         class: "slide",
-        classSkils: "evenskill",
+        classSkils: "oddskill",
         skills: ["Kubernetes", "Terraform", "GCP", "CI/CD", , "Gitlab", "Helm", "Traefik", "Docker"],
         description: "The goal of this project is to wrapped a total project (Front / Back / Database) thanks to Terrraform on a kubernetes cluster (GCP), and to deploy it with a CI/CD pipeline (Gitlab).",
         detail: [{
@@ -90,10 +142,10 @@ let portfolioElements = [
         id: 3,
         title: "Quentinvedrenne.fr",
         titleref: "https://quentinvedrenne.fr/",
-        github: "https://github.com/quentinved/quentinvedrenne.fr",
+        github: ["https://github.com/quentinved/quentinvedrenne.fr"],
         type: "Personal",
         class: "slide",
-        classSkils: "oddskill",
+        classSkils: "evenskill",
         skills: ["React", "Cloudflare Pages", "Typeform"],
         description: "The goal of this project is to create my portfolio to search for my internship at the end of my degree",
         detail: [{
@@ -115,11 +167,10 @@ let portfolioElements = [
         id: 4,
         title: "Sharepassword",
         titleref: "https://sharepassword-quentinvedrenne.fr/",
-        titleref: "https://github.com/quentinved",
-        github: "https://github.com/quentinved",
+        github: ["https://github.com/quentinved/SharePasswordBack", "https://github.com/quentinved/SharePasswordFront"],
         type: "Personal",
         class: "slide",
-        classSkils: "evenskill",
+        classSkils: "oddskill",
         skills: ["React", "NextJS", "NodeJS", "ChakraUI"],
         description: "The goal of this project was to create a website and an extension that would allow you to share your password during a specific period of time",
         detail: [{
@@ -146,7 +197,7 @@ let portfolioElements = [
         title: "Area",
         type: "School",
         class: "slide",
-        classSkils: "oddskill",
+        classSkils: "evenskill",
         skills: ["Software Architect", "React", "NodeJS", "ExpressJS", "Docker"],
         description: "The goal of this project was to implement a web application that works like IFTTT and/or Zapier",
         detail: [{
@@ -165,7 +216,7 @@ let portfolioElements = [
         title: "Dashboard",
         type: "School",
         class: "slide",
-        classSkils: "evenskill",
+        classSkils: "oddskill",
         skills: ["Software Architect", "React", "NodeJS", "ExpressJS", "Docker"],
         description: "The goal of this project was to implement a web application that works like NetVibes.",
         detail: [{
@@ -188,7 +239,7 @@ let portfolioElements = [
         title: "Imgur mobile app",
         type: "School",
         class: "slide",
-        classSkils: "oddskill",
+        classSkils: "evenSkill",
         skills: ["Kotlyn", "Mobile application"],
         description: "The goal of this project is to use and implement online photo sharing API platforms. For me and my mate we decide to create a photo finder and browsing application with the Imgur API.",
         detail: [{

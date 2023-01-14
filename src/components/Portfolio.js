@@ -14,9 +14,16 @@ const Slide = (props) => {
                             {props.data.title}
                         </a>
                     </h1>
-                    {props.data.github && <a href={props.data.github}>
-                        <Image src="github.png" alt="github" width={30} height={30} className={styles.test}/>
-                    </a>}
+                    <div className={styles.containerGithub}>
+                        {props.data.github && props.data.github.map((link, index) =>  {
+                            console.log(link)
+                            return (
+                                <a key={index} href={link} className={styles.githubMargin}>
+                                    <Image src="github.png" alt="github" width={30} height={30}  />
+                                </a>
+                            )
+                        })}
+                    </div>
                 </div>
                 <div className={styles.containerSkillsPortfolio}>
                     {props.data.skills && props.data.skills.map((elem, index) => {

@@ -100,7 +100,6 @@
 }
 
 .oddskill {
-    max-width: 110px;
     height: 55px;
     display: flex;
     text-align: center;
@@ -117,7 +116,6 @@
 }
 
 .evenskill {
-    max-width: 110px;
     height: 55px;
     display: flex;
     text-align: center;
@@ -159,13 +157,16 @@
     margin-top: -2%;
     font-size: 1.1em;
 
-}
+} 
 
 .listPortfolio {
     margin-top: -2%;
     font-size: 1.2em;
 }
 
+.githubMargin {
+    margin-left: 10px;
+}
 
 
 /* Todo: Other way for image responsive */

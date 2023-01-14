@@ -27,7 +27,7 @@ const Story = () => {
         <motion.div className={styles.textContainer} variants={storyAnim}>
           <p>
             Hi, my name is Quentin Vedrenne 👋 ! <br></br>
-            I’m a French Student from <a href='https://www.epitech.eu/fr/formations/epitech-en-5-ans-international/'> EPITECH</a> in France, and I’m currently looking for a Software Engineer Internship in the United States for six months from March to August 2023 to conclude my Master in Computer Science.<br></br>
+            I’m a French Student from <a href='https://www.epitech.eu/fr/formations/epitech-en-5-ans-international/'> EPITECH</a> in France, and I’m currently looking for a Software Engineer Internship for six months from March to August 2023 to conclude my Master in Computer Science.<br></br>
             With my three years experience in the IT development and 1 year in the role of project manager, I’m confident that my knowledge will be a real asset to the team.<br></br>
             I’m a quick learner, and I’m motivate and passionate to learn new things and always looking for new challenges.<br></br>
           </p>
