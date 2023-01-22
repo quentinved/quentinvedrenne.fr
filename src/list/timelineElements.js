@@ -4,15 +4,15 @@ let timelineElements = [
     title: "Computer science / Engineer",
     location: "San Francisco, United States",
     type: "Education",
-    skills: ["Software Engineer", "React", "NodeJS", "Typescript", "Machine Learning", "Biologie"],
+    skills: ["Software Engineer", "React", "NodeJS", "Typescript", "Machine Learning", "Biology"],
     company_name: "SAN FRANCISCO STATE UNIVERSITY - EXCHANGE STUDENT",
     detail: [{
       id: 1,
-      title: "Fall 2021 (Computer Science) / 3.6 GPA",
+      title: "Fall 2021 (Computer Science) / 3.74 GPA",
     },
     {
       id: 2,
-      title: "Spring 2022 (Computer Science - Engineer) / 3.5 GPA",
+      title: "Spring 2022 (Computer Science - Engineer) / 3.68 GPA",
 
     }
     ],
@@ -28,8 +28,19 @@ let timelineElements = [
     skills: ["Project managment", "NextJS", "NodeJS", "Lead developer"],
     detail: [{
       id: 1,
-      title: "Project manager",
-      task: ["Design and Development of a newspaper website with a microservice architecture. (Javascript / Scrum)", "Conception, Development, and Growth hacking for some market places. (Laravel / Scrum)"]
+      title: "Design and implement of a newspaper website with a microservice architecture for high availability. (Typescript / Scrum)",
+    },
+    {
+      id: 3,
+      title: "Conception, Development, and Growth hacking for some marketplaces. (Laravel / Scrum)"
+    },
+    {
+      id: 4,
+      title: "Creation of processes necessary for the proper functioning of the company such as recruitment flow, project management flow, team and project management flow"
+    },
+    {
+      id: 5,
+      title: "Creation of the R&D department to manage the turn over and the training of developers on new languages"
     },
     {
       id: 2,
@@ -48,7 +59,7 @@ let timelineElements = [
     detail: [{
       id: 1,
       title: "Scrum Master for newspapers website",
-      task: ["Made a link between the journalist and the development team for rebuilt the back office", "Maintain and add features for the all newpaper websites"]
+      task: ["Made a link between the journalist and the development team for rebuilt the back office", "Maintain and add features for the all newspaper websites"]
 
     }],
     date: "April 2020 - November 2020 (8 Months)",
@@ -63,7 +74,7 @@ let timelineElements = [
     detail: [{
       id: 1,
       title: "Agile Software Integrator",
-      task: ["Developer full stack for a platform to predict the impact of the stock market thanks to social networks (Angular)"]
+      task: ["Developer full stack for a platform to predict the impact of the stock market thanks to social networks (Angular)", "Managing all new features on the project (Agile Software Integrator)"]
     }],
     date: "September 2019 -  January 2020 (4 Months)",
   },
@@ -97,7 +108,7 @@ let timelineElements = [
       id: 5,
       title: "Development of a mobile application Instagram (Kotlyn)",
     }],
-    date: "September 2019 - September 2023 (5 Year)",
+    date: "September 2018 - September 2023 (5 Year)",
   },
   {
     id: 6,
@@ -109,11 +120,11 @@ let timelineElements = [
     skills: ["VBA", "Managment Process", "Typescript"],
     detail: [{
       id: 1,
-      title: "Developed a program to automate the statistics of goods received at the Clinic",
+      title: "Developed a program to automate the statistics of goods received inside the Clinic",
     },
     {
       id: 2,
-      title: "Participated in the development of an automated supplier statistics program that shows the order management activity and the financial aspect of the department",
+      title: "Design and implement of an automated supplier statistics program that shows the order management activity and the financial aspect of the department",
     }],
     date: "July 2018 - August 2018 (2 Months)",
   }
