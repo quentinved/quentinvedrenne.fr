@@ -1,38 +1,38 @@
 let skillsElements = [
     {
         id: 1,
-        src: "./js.png",
+        src: "./rust.png",
         class: "normalLogo",
         directionLeft: false,
     },
     {
         id: 2,
-        src: "./ts.png",
+        src: "./c.png",
         class: "normalLogo",
         directionLeft: false,
     },
     {
         id: 3,
-        src: "./react.png",
+        src: "./cpp.png",
         class: "normalLogo",
         directionLeft: false,
     },
     {
         id: 4,
-        src: "./node.png",
+        src: "./ts.png",
         class: "normalLogo",
         directionLeft: false,
     },
     {
         id: 5,
-        src: "./next.png",
+        src: "./react.png",
         class: "normalLogo",
         directionLeft: false,
     },
     {
         id: 6,
-        src: "./c.png",
-        class: "specialLogo",
+        src: "./aws.png",
+        class: "awsLogo",
         directionLeft: false,
     },
     {
@@ -48,21 +48,9 @@ let skillsElements = [
         directionLeft: true,
     },
     {
-        id: 9,
-        src: "./aws.png",
-        class: "awsLogo",
-        directionLeft: true,
-    },
-    {
         id: 10,
         src: "./kube.png",
         class: "normalLogo",
-        directionLeft: true,
-    },
-    {
-        id: 11,
-        src: "./cpp.png",
-        class: "specialLogo",
         directionLeft: true,
     },
     {

@@ -1,13 +1,12 @@
-import styles from '../../styles/Story.module.css'
-import { motion } from 'framer-motion'
-import Image from 'next/image';
-import { storyAnim } from '../animation/StoryText';
-import { aboutmeAnim } from '../animation/StoryText';
+import styles from "../../styles/Story.module.css";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { storyAnim } from "../animation/StoryText";
+import { aboutmeAnim } from "../animation/StoryText";
 
 const Story = () => {
-
   return (
-    <section id='aboutme-section'>
+    <section id="aboutme-section">
       <motion.div
         className={styles.storyContainer}
         initial="offscreen"
@@ -17,7 +16,12 @@ const Story = () => {
         <div className={styles.aboutme}>
           <div className={styles.containerImg}>
             <div className={styles.nextImg}>
-              <Image width="250" height="260" src='/pp.jpeg' alt='profile picture' />
+              <Image
+                width="250"
+                height="260"
+                src="/pp.jpeg"
+                alt="profile picture"
+              />
             </div>
           </div>
           <motion.div variants={aboutmeAnim} className={styles.titleStory}>
@@ -27,9 +31,13 @@ const Story = () => {
         <motion.div className={styles.textContainer} variants={storyAnim}>
           <p>
             Hi, my name is Quentin Vedrenne 👋 ! <br></br>
-            I’m a French Student from <a href='https://www.epitech.eu/fr/formations/epitech-en-5-ans-international/'> EPITECH</a> in France, and I’m currently looking for a Software Engineer Internship for six months from March to August 2023 to conclude my Master in Computer Science.<br></br>
-            With my three years experience in the IT development and 1 year in the role of project manager, I’m confident that my knowledge will be a real asset to the team.<br></br>
-            I’m a quick learner, and I’m motivate and passionate to learn new things and always looking for new challenges.<br></br>
+            I'm a dynamic Software Engineer with a passion for solving complex
+            problems and fostering collaborative environments. <br></br>My
+            journey in tech is driven by a relentless pursuit of innovation,
+            excellence, and impactful teamwork.<br></br> With a solid background
+            in full-stack development, cloud technologies, and project
+            management, I thrive in settings where I can contribute to
+            meaningful solutions and continuous learning.
           </p>
         </motion.div>
         {/* TODO: Add when got the english link from the school */}
@@ -38,7 +46,7 @@ const Story = () => {
           </div> */}
       </motion.div>
     </section>
-  )
-}
+  );
+};
 
-export default Story  
+export default Story;
