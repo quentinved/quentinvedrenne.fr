@@ -20,7 +20,7 @@ export interface SkillElement {
   id: number;
   name: string;
   src: string;
-  category: 'language' | 'cloud' | 'devops';
+  category: 'language' | 'database' | 'cloud' | 'devops';
   invert?: boolean;
 }
 
