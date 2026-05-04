@@ -26,14 +26,14 @@ export default function Experience() {
             return (
               <AnimatedSection key={item.id} delay={index * 0.05}>
                 <div
-                  className="group border border-white/8 rounded-xl hover:border-white/15 transition-colors duration-300 cursor-pointer"
+                  className="group border border-surface/8 rounded-xl hover:border-surface/15 transition-colors duration-300 cursor-pointer"
                   onClick={() => setExpandedId(isExpanded ? null : item.id)}
                 >
                   {/* Header row */}
                   <div className="flex items-start gap-4 md:gap-6 p-5 md:p-6">
                     {/* Company image */}
                     {item.image && (
-                      <div className="w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden border border-white/10 shrink-0 mt-0.5 bg-white p-1.5">
+                      <div className="w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden border border-surface/10 shrink-0 mt-0.5 bg-white p-1.5">
                         <Image
                           src={item.image}
                           alt={item.company_name}
@@ -48,7 +48,7 @@ export default function Experience() {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-start justify-between gap-3">
                         <div>
-                          <h3 className="text-base md:text-lg font-semibold text-white leading-tight">
+                          <h3 className="text-base md:text-lg font-semibold text-foreground leading-tight">
                             {item.title}
                           </h3>
                           <p className="text-sm text-text-secondary mt-0.5">
@@ -99,7 +99,7 @@ export default function Experience() {
                         className="overflow-hidden"
                       >
                         <div className="px-5 md:px-6 pb-6 pt-0">
-                          <div className="border-t border-white/5 pt-5">
+                          <div className="border-t border-surface/5 pt-5">
                             <div className="flex flex-wrap gap-2 mb-5">
                               {item.skills.map((skill, i) => (
                                 <SkillPill key={i} label={skill} />

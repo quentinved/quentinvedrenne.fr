@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+        font-family: "Inter", -apple-system, sans-serif;
+        background: #0a0a0a;
+        color: #f5f5f5;
+        -webkit-font-smoothing: antialiased;
+      }
+      .stage {
+        position: relative;
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+      }
+      .orb-a {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(ellipse 80% 60% at 10% 20%, rgba(37, 99, 235, 0.28), transparent 60%),
+          radial-gradient(ellipse 60% 80% at 95% 70%, rgba(2, 132, 199, 0.22), transparent 60%),
+          radial-gradient(ellipse 70% 50% at 40% 95%, rgba(37, 99, 235, 0.12), transparent 60%);
+      }
+      .grid {
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(circle, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+        background-size: 32px 32px;
+        opacity: 0.45;
+      }
+      .vignette {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse 90% 70% at 50% 50%, transparent 30%, rgba(0, 0, 0, 0.45) 100%);
+      }
+
+      .content {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        align-items: center;
+        gap: 56px;
+        height: 100%;
+        padding: 64px 80px;
+      }
+
+      /* Left — QV monogram block */
+      .monogram {
+        position: relative;
+        width: 320px;
+        height: 320px;
+        border-radius: 32px;
+        background: linear-gradient(135deg, rgba(37, 99, 235, 0.18), rgba(2, 132, 199, 0.10));
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(20px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 10px 60px rgba(37, 99, 235, 0.15);
+      }
+      .qv {
+        font-size: 200px;
+        font-weight: 800;
+        letter-spacing: -10px;
+        background: linear-gradient(135deg, #ffffff 0%, #cfe2ff 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        line-height: 1;
+        padding-right: 6px;
+      }
+      .corner {
+        position: absolute;
+        bottom: -14px;
+        right: -14px;
+        width: 90px;
+        height: 90px;
+        border-radius: 24px;
+        border: 1px solid rgba(37, 99, 235, 0.45);
+      }
+
+      /* Right — text */
+      .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 22px;
+      }
+      .name {
+        font-size: 88px;
+        font-weight: 800;
+        line-height: 0.98;
+        letter-spacing: -3px;
+        color: #ffffff;
+      }
+      .accent {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+      .accent .bar {
+        height: 2px;
+        width: 64px;
+        background: linear-gradient(90deg, #2563eb, #0284c7);
+        border-radius: 2px;
+      }
+      .accent .role {
+        font-size: 22px;
+        color: rgba(245, 245, 245, 0.85);
+        font-weight: 500;
+      }
+      .pills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 8px;
+      }
+      .pill {
+        padding: 8px 16px;
+        font-size: 18px;
+        color: rgba(245, 245, 245, 0.75);
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.10);
+        border-radius: 999px;
+      }
+      .url {
+        position: absolute;
+        bottom: 36px;
+        right: 80px;
+        font-size: 18px;
+        color: rgba(245, 245, 245, 0.45);
+        letter-spacing: 0.3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="stage">
+      <div class="orb-a"></div>
+      <div class="grid"></div>
+      <div class="vignette"></div>
+
+      <div class="content">
+        <div class="monogram">
+          <div class="qv">QV</div>
+          <div class="corner"></div>
+        </div>
+
+        <div class="text">
+          <div class="name">Quentin<br />Vedrenne</div>
+          <div class="accent">
+            <div class="bar"></div>
+            <div class="role">Founding Engineer · Lead Developer · Cloud Architect</div>
+          </div>
+          <div class="pills">
+            <div class="pill">Rust</div>
+            <div class="pill">AWS</div>
+            <div class="pill">React</div>
+            <div class="pill">TypeScript</div>
+            <div class="pill">Kubernetes</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="url">quentinvedrenne.com</div>
+    </div>
+  </body>
+</html>
