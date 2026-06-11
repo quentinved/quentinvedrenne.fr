@@ -37,7 +37,7 @@ export default function Hero() {
             >
               <div className="h-px w-12 bg-gradient-to-r from-blue-600 to-sky-500" />
               <p className="text-lg text-text-secondary/80">
-                Founding Engineer · Lead Developer · Cloud Architect
+                Founding Engineer — Rust &amp; Cloud
               </p>
             </motion.div>
 
@@ -47,11 +47,13 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="mt-8 text-text-secondary text-base md:text-lg leading-relaxed max-w-xl"
             >
-              I&apos;m Quentin a founding engineer at{" "}
+              I&apos;m Quentin, a founding engineer at{" "}
               <span className="text-foreground">Edamame Technologies</span>. I
               build production systems in Rust and on the cloud, with a focus on
               developer tools, open-source software, and infrastructure
-              that&apos;s robust, secure, scalable, and well-tested.
+              that&apos;s robust, secure, scalable, and well-tested. I&apos;m
+              happiest building privacy-first software, where the server never
+              sees your data.
             </motion.p>
 
             {/* Featured open-source project callout */}
