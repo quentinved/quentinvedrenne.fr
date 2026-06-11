@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 const SITE_URL = "https://quentinvedrenne.com";
-const TITLE = "Quentin Vedrenne — Software Engineer | Rust, AWS, Cloud";
+const TITLE = "Quentin Vedrenne — Founding Engineer | Rust, AWS, Cloud";
 const DESCRIPTION =
   "Founding engineer at Edamame Technologies and creator of Whisper, an open-source zero-knowledge secret manager. I build production systems in Rust, on AWS, and across the cloud.";
 
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Quentin Vedrenne — Software Engineer",
+        alt: "Quentin Vedrenne — Founding Engineer",
       },
     ],
   },
@@ -59,7 +59,7 @@ const personSchema = {
   name: "Quentin Vedrenne",
   url: SITE_URL,
   image: `${SITE_URL}/og.png`,
-  jobTitle: "Software Engineer",
+  jobTitle: "Founding Engineer",
   description: DESCRIPTION,
   sameAs: [
     "https://github.com/quentinved",

@@ -1,3 +1,4 @@
+import MotionProvider from '@/components/MotionProvider';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Experience from '@/components/Experience';
@@ -8,6 +9,7 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
+    <MotionProvider>
     <main className="min-h-screen relative">
       {/* Fixed background — radial blue glow + dot grid, both theme-aware via CSS vars */}
       <div className="fixed inset-0 -z-10">
@@ -23,5 +25,6 @@ export default function Home() {
       <Contact />
       <Footer />
     </main>
+    </MotionProvider>
   );
 }

@@ -33,7 +33,7 @@ export interface PortfolioDetail {
 export interface PortfolioElement {
   id: number;
   title: string;
-  type: 'School' | 'Personal';
+  type: 'School' | 'Personal' | 'Professional';
   skills: string[];
   description: string;
   detail: PortfolioDetail[];
