@@ -7,6 +7,7 @@ const skillsElements: SkillElement[] = [
   { id: 3, name: 'TypeScript', src: '/ts.png', category: 'language' },
   { id: 4, name: 'C', src: '/c.png', category: 'language' },
   { id: 5, name: 'C++', src: '/cpp.png', category: 'language' },
+  { id: 19, name: 'Python', src: '/python.svg', category: 'language' },
   // Frameworks & runtimes (kept under 'language' to match existing schema)
   { id: 6, name: 'React', src: '/react.png', category: 'language' },
   { id: 7, name: 'Next.js', src: '/next.png', category: 'language', invert: true },
