@@ -7,7 +7,7 @@ const RESUME_URL =
   "https://docs.google.com/document/d/118u5fe-6Rp7wSy-epWLSSR7hGatJjZ2PGn4WXpVh3iY/export?format=pdf";
 
 const heroMetrics: { value: string; label: string }[] = [
-  { value: "5+ yrs", label: "engineering experience" },
+  { value: "4+ yrs", label: "engineering experience" },
   { value: "3+ yrs", label: "Rust in production" },
 ];
 
