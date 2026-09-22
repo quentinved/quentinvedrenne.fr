@@ -17,6 +17,80 @@ function GitHubIcon({ size = 16 }: { size?: number }) {
   );
 }
 
+function LockIcon() {
+  return (
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+      <rect x="4" y="11" width="16" height="10" rx="2" />
+      <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+    </svg>
+  );
+}
+
+function ExternalIcon({ size = 11 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+      <path d="M7 17L17 7M9 7h8v8" />
+    </svg>
+  );
+}
+
+/**
+ * "Soon" badge for a project that is finished but not publicly reachable yet.
+ * Hovering (or focusing) reveals why, in a tooltip rather than the native title,
+ * which is too slow to appear and never shows on touch. When the wait itself is
+ * public — an open pull request, say — the badge becomes a link to it.
+ */
+function SoonBadge({
+  reason,
+  href,
+  hrefLabel,
+  size = 'sm',
+}: {
+  reason: string;
+  href?: string;
+  hrefLabel?: string;
+  size?: 'sm' | 'md';
+}) {
+  const box = size === 'md' ? 'h-8 px-3' : 'h-7 px-2.5';
+  const base = `inline-flex items-center gap-1.5 ${box} rounded-full bg-surface/10 border border-surface/15 text-text-secondary/70 text-xs font-medium select-none`;
+
+  return (
+    <span className="relative inline-flex group/soon">
+      {href ? (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          className={`${base} hover:bg-surface/15 hover:border-surface/25 hover:text-foreground transition-colors`}
+        >
+          <LockIcon />
+          Soon
+          <span className="text-text-secondary/30">|</span>
+          <ExternalIcon />
+        </a>
+      ) : (
+        <span className={`${base} cursor-default`} tabIndex={0}>
+          <LockIcon />
+          Soon
+        </span>
+      )}
+
+      <span
+        role="tooltip"
+        className="pointer-events-none absolute bottom-full right-0 mb-2 w-max max-w-[15rem] rounded-lg bg-background border border-surface/15 px-2.5 py-1.5 text-xs leading-snug text-text-secondary shadow-lg shadow-black/20 opacity-0 translate-y-1 transition-all duration-200 group-hover/soon:opacity-100 group-hover/soon:translate-y-0 group-focus-within/soon:opacity-100 group-focus-within/soon:translate-y-0"
+      >
+        {reason}
+        {href && (
+          <span className="block mt-0.5 text-blue-600 dark:text-blue-400">
+            {hrefLabel ?? 'Follow it here'}
+          </span>
+        )}
+      </span>
+    </span>
+  );
+}
+
 function CardImageCarousel({ images, alt, intervalMs = 3500 }: { images: string[]; alt: string; intervalMs?: number }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -198,6 +272,14 @@ function ProjectModal({ project, onClose }: { project: PortfolioElement; onClose
                       <path d="M7 17L17 7M9 7h8v8" />
                     </svg>
                   </a>
+                )}
+                {!isLiveDemo(project.titleref) && project.comingSoon && (
+                  <SoonBadge
+                    reason={project.comingSoon}
+                    href={project.comingSoonUrl}
+                    hrefLabel={project.comingSoonUrlLabel}
+                    size="md"
+                  />
                 )}
                 {project.github?.map((link, i) => (
                   <a
@@ -410,6 +492,13 @@ export default function Portfolio() {
                                 <path d="M7 17L17 7M9 7h8v8" />
                               </svg>
                             </a>
+                          )}
+                          {!isLiveDemo(project.titleref) && project.comingSoon && (
+                            <SoonBadge
+                              reason={project.comingSoon}
+                              href={project.comingSoonUrl}
+                              hrefLabel={project.comingSoonUrlLabel}
+                            />
                           )}
                         </div>
                       </div>

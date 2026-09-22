@@ -40,4 +40,14 @@ export interface PortfolioElement {
   img: string[];
   github?: string[];
   titleref?: string;
+  // Set when the project is finished but not yet publicly reachable. The text is the
+  // reason, shown on hover; the card renders a locked "Soon" badge instead of "Try it".
+  comingSoon?: string;
+  // Where the wait can be followed in public (an open PR, a store listing...).
+  // Given one, the "Soon" badge becomes a link to it.
+  comingSoonUrl?: string;
+  comingSoonUrlLabel?: string;
+  // Set to keep the project in the file but out of the site entirely (no card, no
+  // skill filter, no counts).
+  hidden?: boolean;
 }
