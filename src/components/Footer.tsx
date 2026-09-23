@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 function GitHubIcon() {
   return (
     <svg width={16} height={16} viewBox="0 0 24 24" fill="currentColor">
@@ -34,7 +36,7 @@ export default function Footer() {
             <a href="#portfolio" className="hover:text-foreground transition-colors">Portfolio</a>
             <a href="#skills" className="hover:text-foreground transition-colors">Skills</a>
             <a href="#experience" className="hover:text-foreground transition-colors">Experience</a>
-            <a href="/blog" className="hover:text-foreground transition-colors">Blog</a>
+            <Link href="/blog" className="hover:text-foreground transition-colors">Blog</Link>
             <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>
           </nav>
 
