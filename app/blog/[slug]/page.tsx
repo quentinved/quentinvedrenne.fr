@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
+import type { JSX } from 'react';
 import { getPost, posts } from '@/data/posts';
 import WhisperArchitecture from '@/content/posts/whisper-architecture';
 
@@ -18,8 +19,11 @@ export function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const post = getPost(params.slug);
+type Params = Promise<{ slug: string }>;
+
+export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+  const { slug } = await params;
+  const post = getPost(slug);
   if (!post) return {};
   return {
     title: `${post.title} — Quentin Vedrenne`,
@@ -32,9 +36,10 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function PostPage({ params }: { params: { slug: string } }) {
-  const post = getPost(params.slug);
-  const Renderer = renderers[params.slug];
+export default async function PostPage({ params }: { params: Params }) {
+  const { slug } = await params;
+  const post = getPost(slug);
+  const Renderer = renderers[slug];
   if (!post || !Renderer) notFound();
 
   return (
