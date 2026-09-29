@@ -109,8 +109,7 @@ const portfolioElements: PortfolioElement[] = [
       { id: 7, title: "Build tooling for many parallel sessions", task: ["Tools/dev.sh serialises builds and simulator use behind locks and shares one DerivedData, so several concurrent sessions queue instead of colliding", "Debug-only launch arguments (-noGameCenter, -denari, -shop, -autoPlay) to reach any state without playing to it", "CI on every push: the Swift package suite (rules, bots, coach, review, networking, rewards), the Worker suite (ranking, seasons, identity verification) and a build of the app", "Network tests run a host and several guests over an in-process loopback transport — no devices needed"] },
     ],
     img: ["/scopa_0.jpg", "/scopa_1.jpg", "/scopa_2.jpg"],
-    comingSoon: "Not released yet",
-    hidden: true,
+    titleref: "https://apps.apple.com/fr/app/scopa-bella/id6810455597?l=en-GB",
   },
   {
     id: 0,
